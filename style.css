@@ -75,11 +75,12 @@ svg { display: block; }
 }
 .hero__title {
   display: inline-block;
-  margin: 0 0 6px;
-  padding: 2px 10px;
-  font-size: 13px;
+  margin: 0 0 8px;
+  padding: 3px 18px;
+  font-size: 26px;
   font-weight: 700;
-  letter-spacing: .12em;
+  line-height: 1.35;
+  letter-spacing: .1em;
   background: var(--accent);
   border-radius: 999px;
   text-shadow: none;
@@ -92,6 +93,8 @@ svg { display: block; }
   line-height: 1.15;
   letter-spacing: .06em;
 }
+/* 名前の文字幅を90%に（横方向だけ圧縮） */
+.hero__name span { display: inline-block; transform: scaleX(.9); transform-origin: left center; }
 .hero__catch {
   margin: 6px 0 0;
   font-size: 14px;
@@ -99,22 +102,21 @@ svg { display: block; }
 }
 .hero__catch:empty { display: none; }
 .hero__catch { white-space: pre-line; line-height: 1.5; font-weight: 700; }
-.hero__tags {
-  display: flex; flex-wrap: wrap; gap: 3px;
-  margin: 6px 0 0; padding: 0; list-style: none;
-}
-.hero__tags:empty { display: none; }
-.hero__tags li {
-  padding: 0 5px;
-  font-size: 10.5px; font-weight: 700; line-height: 1.7;
+/* 「酒田　酒田市　…」をPRしていきます！ */
+.hero__pr {
+  display: inline-block;
+  margin: 8px 0 0;
+  padding: 3px 10px;
+  font-size: clamp(12px, 3.6vw, 15px); font-weight: 700; line-height: 1.6;
+  white-space: pre-line;
   background: rgba(255,255,255,.18);
   border: 1px solid rgba(255,255,255,.35);
-  border-radius: 999px;
+  border-radius: 10px;
   text-shadow: none;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
-.hero__tags li::before { content: '#'; opacity: .7; margin-right: 1px; }
+.hero__pr:empty { display: none; }
 .hero__more {
   position: absolute; top: max(12px, env(safe-area-inset-top)); right: 12px;
   display: inline-flex; align-items: center; gap: 2px;
@@ -164,7 +166,21 @@ svg { display: block; }
   white-space: nowrap;
   -webkit-tap-highlight-color: transparent;
   transition: color .2s;
+  position: relative;
+  isolation: isolate;
 }
+/* ボタンの点滅（オレンジの光がふわっと点いたり消えたり。4つが順番に） */
+.tab::before {
+  content: ''; position: absolute; inset: 5px 3px; z-index: -1;
+  border-radius: 12px;
+  background: var(--accent);
+  opacity: 0;
+  animation: tabBlink 1.6s ease-in-out infinite;
+}
+.tab:nth-child(2)::before { animation-delay: .2s; }
+.tab:nth-child(3)::before { animation-delay: .4s; }
+.tab:nth-child(4)::before { animation-delay: .6s; }
+@keyframes tabBlink { 0%, 100% { opacity: 0; } 50% { opacity: .28; } }
 .tab svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .tab svg .fill { fill: currentColor; stroke: none; }
 .tab[aria-selected="true"] { color: var(--navy); }
@@ -412,6 +428,27 @@ svg { display: block; }
 .about__dl:empty { display: none; }
 .about__dl dt { color: var(--ink-3); }
 .about__dl dd { margin: 0; }
+/* 略歴・現在 */
+.pf { margin-top: 20px; }
+.pf__h {
+  margin: 0 0 8px; padding-bottom: 4px;
+  font-family: var(--font-head); font-size: 17px; font-weight: 900; color: var(--navy);
+  border-bottom: 2px solid var(--accent);
+}
+.pf__group { margin-top: 10px; }
+.pf__head { margin: 0; font-size: 15px; font-weight: 700; color: var(--ink); }
+.pf__head::before { content: '☆'; margin-right: 2px; color: var(--accent); }
+.pf__list { margin: 4px 0 0; padding: 0 0 0 1.2em; list-style: none; font-size: 14px; line-height: 1.75; color: var(--ink-2); }
+.pf__list li { display: flex; justify-content: space-between; gap: 10px; }
+.pf__list em { flex: none; font-style: normal; color: var(--ink-3); }
+.pf--now .pf__list { padding-left: 0; font-size: 15px; color: var(--ink); }
+.pf--now .pf__list li { padding: 5px 0 5px 1.1em; position: relative; border-bottom: 1px dashed var(--line); }
+.pf--now .pf__list li::before { content: ''; position: absolute; left: 2px; top: 50%; width: 7px; height: 7px; margin-top: -3.5px; border-radius: 50%; background: var(--accent); }
+/* 座右の銘 */
+.motto { border: 2px solid var(--accent); border-radius: var(--radius); overflow: hidden; background: #fff; }
+.motto__h { margin: 0; padding: 6px; text-align: center; font-family: var(--font-head); font-size: 16px; font-weight: 700; letter-spacing: .2em; color: #fff; background: var(--accent); }
+.motto__text { margin: 14px 14px 0; font-family: var(--font-head); font-size: clamp(17px, 5vw, 21px); font-weight: 900; line-height: 1.6; color: var(--accent); white-space: pre-line; text-align: center; }
+.motto__sub { margin: 8px 14px 14px; text-align: center; font-size: 14px; font-weight: 700; color: var(--ink); }
 .contact { margin-top: 18px; display: grid; gap: 8px; }
 .contact a, .contact p {
   display: flex; align-items: center; gap: 10px;
@@ -440,4 +477,6 @@ svg { display: block; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .hero__img { transform: none; }
+  /* ボタンの点滅はご要望のため、この設定でも残す */
+  .tab::before { animation: tabBlink 1.6s ease-in-out infinite !important; }
 }
