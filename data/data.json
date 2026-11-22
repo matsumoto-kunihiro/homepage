@@ -1,0 +1,655 @@
+{
+  "updatedAt": "2026-11-17T03:28:49.107Z",
+  "sources": {
+    "cityNews": {
+      "ok": true,
+      "at": "2026-11-17T03:28:49.107Z",
+      "count": 40
+    },
+    "machiiroEvents": {
+      "ok": true,
+      "at": "2026-11-17T03:28:49.107Z",
+      "count": 14
+    },
+    "myplEvents": {
+      "ok": true,
+      "at": "2026-11-17T03:28:49.107Z",
+      "count": 26
+    }
+  },
+  "cityNews": [
+    {
+      "date": "2026-11-17",
+      "title": "「災害時返却カーリース自治体プラン」を活用した公用車を導入しました",
+      "url": "https://www.city.sakata.lg.jp/shisei/shisetsu/somu02202611122142.html",
+      "category": "市政"
+    },
+    {
+      "date": "2026-11-17",
+      "title": "酒田市プレスリリース",
+      "url": "https://www.city.sakata.lg.jp/shisei/kouho/jyohohasshin/pressrelease.html",
+      "category": "市政"
+    },
+    {
+      "date": "2026-11-17",
+      "title": "入札・契約",
+      "url": "https://www.city.sakata.lg.jp/shisei/nyusatsu/nyusatsukeiyaku.html",
+      "category": "市政"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "小・中学校における感染症による臨時休業等の状況について",
+      "url": "https://www.city.sakata.lg.jp/kosodate/kyouiku/school/gakko0320251118.html",
+      "category": "子育て・教育"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "離乳食教室参加者募集",
+      "url": "https://www.city.sakata.lg.jp/kenko/kenko/kakusyukouza/rinyusyoku.html",
+      "category": "健康・福祉"
+    },
+    {
+      "date": "2026-11-15",
+      "title": "市長公務日程",
+      "url": "https://www.city.sakata.lg.jp/shisei/shicyou/koumunittei07.html",
+      "category": "市政"
+    },
+    {
+      "date": "2026-11-13",
+      "title": "「くるみん」「ユースエール」市内認定企業が増えました！",
+      "url": "https://www.city.sakata.lg.jp/sangyo/roudo/shoko02202611youth.html",
+      "category": "産業・観光"
+    },
+    {
+      "date": "2026-11-13",
+      "title": "消防ワンデイインターンシップを開催しました",
+      "url": "https://www.city.sakata.lg.jp/bousai/syobokyukyu/syobooshirase/shobo0220261113.html",
+      "category": "防災"
+    },
+    {
+      "date": "2026-11-13",
+      "title": "酒田市職員採用試験（7月募集分）最終試験合格者を発表",
+      "url": "https://www.city.sakata.lg.jp/shisei/shisyokuin/saiyoushiken/jinjisaiyoguide2026.html",
+      "category": "市政"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "酒田市リレーマラソン大会2026が開催されました",
+      "url": "https://www.city.sakata.lg.jp/bunka/sports/sportsevent/sports0220260909.html",
+      "category": "文化・スポーツ"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "「SAKATA PR動画コンテスト in English 2026」上映審査会＆表彰式を開催します！",
+      "url": "https://www.city.sakata.lg.jp/bunka/kokusaikouryukyokai/awardceremony2026.html",
+      "category": "文化・スポーツ"
+    },
+    {
+      "date": "2026-11-11",
+      "title": "【酒田勤労者福祉センター】メンテナンスのためシステム予約を一時停止します",
+      "url": "https://www.city.sakata.lg.jp/shisei/shisetsu/kanrenshisetsu/kinrousyafukusi.html",
+      "category": "市政"
+    },
+    {
+      "date": "2026-11-11",
+      "title": "スポーツ推進委員会の活動を紹介します",
+      "url": "https://www.city.sakata.lg.jp/bunka/sports/sportskatsudo/sports022020041.html",
+      "category": "文化・スポーツ"
+    },
+    {
+      "date": "2026-11-11",
+      "title": "「オクトーバー・ラン＆ウォーク 2026」酒田市独自特典を贈呈します",
+      "url": "https://www.city.sakata.lg.jp/bunka/sports/sportsevent/October_run_walk.html",
+      "category": "文化・スポーツ"
+    },
+    {
+      "date": "2026-11-11",
+      "title": "酒田市被災者生活支援・地域支え合いセンターからのお知らせ",
+      "url": "https://www.city.sakata.lg.jp/kenko/chiikifukushi/fukushi/furusatokafe.html",
+      "category": "健康・福祉"
+    },
+    {
+      "date": "2026-11-11",
+      "title": "酒田市学校再編ビジョン（案）への意見公募（パブリックコメント）について",
+      "url": "https://www.city.sakata.lg.jp/shisei/ikenkoubo/bosyuuchuu/gakko-vision-iken.html",
+      "category": "市政"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "酒田市学校統合ビジョン懇話会",
+      "url": "https://www.city.sakata.lg.jp/kosodate/kyouiku/gakkotogo/gakko-vision.html",
+      "category": "子育て・教育"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "市道などの通行止め解除について",
+      "url": "https://www.city.sakata.lg.jp/jyutaku/doro/dorokisei/tuukoudome.html",
+      "category": "住まい・環境"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "公園ニュース（光ケ丘公園の利用制限の解除について）",
+      "url": "https://www.city.sakata.lg.jp/jyutaku/kouenryokuchi/kouen/kouennews.html",
+      "category": "住まい・環境"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "11月12日から25日は「女性に対する暴力をなくす運動」期間です",
+      "url": "https://www.city.sakata.lg.jp/kurashi/danjyo/kyosei20221111.html",
+      "category": "くらし"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "浸出水処理施設の維持管理に関するサウンディング型市場調査の実施について",
+      "url": "https://www.city.sakata.lg.jp/shisei/kouekigyoseikumiai/koikisounding.html",
+      "category": "市政"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "アンコンシャス・バイアス啓発CM「日常にかくれた！なんでだろう？？」",
+      "url": "https://www.city.sakata.lg.jp/kurashi/danjyo/yamagataken_uncon.html",
+      "category": "くらし"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "【県内中小企業の皆さまへ】 賃金を引き上げた事業者を支援します！",
+      "url": "https://www.city.sakata.lg.jp/sangyo/roudo/shoko20260218.html",
+      "category": "産業・観光"
+    },
+    {
+      "date": "2026-11-05",
+      "title": "最近開催された酒田市景観審議会の結果",
+      "url": "https://www.city.sakata.lg.jp/jyutaku/keikan/keikanshingikai/keikansinkekka.html",
+      "category": "住まい・環境"
+    },
+    {
+      "date": "2026-11-05",
+      "title": "令和8年度 酒田華いっぱいプロジェクト 四季の展示",
+      "url": "https://www.city.sakata.lg.jp/sangyo/nogyo/shohi_hanrokakudai/sikinotennzi.html",
+      "category": "産業・観光"
+    },
+    {
+      "date": "2026-11-05",
+      "title": "【中町エリア未来会議シリーズ第1話】「まちなか妄想会議―中町エリアの未来を考えよう！ー」（開催報告）",
+      "url": "https://www.city.sakata.lg.jp/shisei/shisakukeikaku/kikaku/sakata_ground_design/machinakamosokaigi.html",
+      "category": "市政"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "令和8年度クマ目撃情報",
+      "url": "https://www.city.sakata.lg.jp/kurashi/doubutsu/yasei/kankyo0320260415.html",
+      "category": "くらし"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "2027年版やまがた県民手帳販売！！",
+      "url": "https://www.city.sakata.lg.jp/shisei/toukei/toukeioshirase/2027yamagatakenmin.html",
+      "category": "市政"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "日向里かふぇで「秋の酒南塩ラーメン」はいかがですか！",
+      "url": "https://www.city.sakata.lg.jp/event/fes_event/ychiki01.html",
+      "category": "イベント"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "令和8年度やまがたトップセミナー",
+      "url": "https://www.city.sakata.lg.jp/kurashi/danjyo/yamagatatopseminar.html",
+      "category": "くらし"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "さかた農林水産業お役立ち情報",
+      "url": "https://www.city.sakata.lg.jp/sangyo/nogyo/nosanbutsu/nosei_AFFinfo.html",
+      "category": "産業・観光"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "夜間納税相談窓口の開設について",
+      "url": "https://www.city.sakata.lg.jp/kurashi/zeikin/nouzei/yakannouzeisoudan.html",
+      "category": "くらし"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "酒田市広報最新号",
+      "url": "https://www.city.sakata.lg.jp/shisei/kouho/kouhosakata/kohosaishin.html",
+      "category": "市政"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "市議会だよりを発行しました",
+      "url": "https://www.city.sakata.lg.jp/shisei/shigikai/gikaijyouho/shigikaidayori.html",
+      "category": "市政"
+    },
+    {
+      "date": "2026-11-01",
+      "title": "ひきこもり相談会の開催",
+      "url": "https://www.city.sakata.lg.jp/kenko/chiikifukushi/fukushi/hikikomori-soudankai.html",
+      "category": "健康・福祉"
+    },
+    {
+      "date": "2026-11-01",
+      "title": "酒田市生活応援商品券の利用期間は終了しました。",
+      "url": "https://www.city.sakata.lg.jp/sangyo/kigyo/kigyo_info/sakata-ouen.html",
+      "category": "産業・観光"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "酒田市の農林水産業（統計）",
+      "url": "https://www.city.sakata.lg.jp/sangyo/nogyo/nosanbutsu/nourintokei.html",
+      "category": "産業・観光"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "第四中学校区義務教育学校「酒田市立川南みらい学園」について",
+      "url": "https://www.city.sakata.lg.jp/kosodate/kyouiku/gakkotogo/dai4chuugakouku.html",
+      "category": "子育て・教育"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "学区改編だより第3号を発行しました",
+      "url": "https://www.city.sakata.lg.jp/kosodate/kyouiku/gakkotogo/kaihendayori.html",
+      "category": "子育て・教育"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "2026城下町松山秋まつり",
+      "url": "https://www.city.sakata.lg.jp/sangyo/mtsuri/nenkanevent/november/11gatsu.html",
+      "category": "産業・観光"
+    }
+  ],
+  "machiiroEvents": [
+    {
+      "date": "2026-11-13",
+      "title": "消防ワンデイインターンシップを開催しました",
+      "url": "https://www.city.sakata.lg.jp/bousai/syobokyukyu/syobooshirase/shobo0220261113.html",
+      "genre": "イベント"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "公園ニュース（光ケ丘公園の利用制限の解除について）",
+      "url": "https://www.city.sakata.lg.jp/jyutaku/kouenryokuchi/kouen/kouennews.html",
+      "genre": "イベント"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "2026城下町松山秋まつり",
+      "url": "https://www.city.sakata.lg.jp/sangyo/mtsuri/nenkanevent/november/11gatsu.html",
+      "genre": "イベント"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "救命入門コースを開催します。（12月19日開催）",
+      "url": "https://www.city.sakata.lg.jp/bousai/syobokyukyu/kousyukaisai/nyuumon1219.html",
+      "genre": "イベント"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "東京藝大連携企画《酒田みらい見本市》を開催します！",
+      "url": "https://www.city.sakata.lg.jp/bunka/geijyutsu/tenjievent/mihonichi.html",
+      "genre": "イベント"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "休日結婚相談会を12月13日に開催します",
+      "url": "https://www.city.sakata.lg.jp/kurashi/kekkon/soudankai.html",
+      "genre": "イベント"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "第59回ひらた文化祭のご案内",
+      "url": "https://www.city.sakata.lg.jp/bunka/geijyutsu/tenjievent/hirata_bunkasai.html",
+      "genre": "イベント"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "花育授業を開催しました",
+      "url": "https://www.city.sakata.lg.jp/sangyo/nogyo/shohi_hanrokakudai/hanaikujyugyou.html",
+      "genre": "イベント"
+    },
+    {
+      "date": "2016-09-29",
+      "title": "第2回酒田コミュニケーションポート（仮称）整備ワークショップ開催について",
+      "url": "http://www.city.sakata.lg.jp/ou/kikaku/toshidesign/toshidesign/pd0923144109.html",
+      "genre": "イベント"
+    },
+    {
+      "date": "2016-09-29",
+      "title": "～百年の森づくり～ 第15回田沢川ダムまつり",
+      "url": "http://www.city.sakata.lg.jp/ou/hirata/kensetsu/kensetsu/tazawagawadamumatsuri.html",
+      "genre": "イベント"
+    },
+    {
+      "date": "2016-09-28",
+      "title": "赤い羽根共同募金街頭募金を開催します",
+      "url": "http://www.city.sakata.lg.jp/ou/kenko/fukushi/chiiki/pd0928085238.html",
+      "genre": "イベント"
+    },
+    {
+      "date": "2016-09-27",
+      "title": "第1回酒田コミュニケーションポート（仮称）整備ワークショップが開催されました",
+      "url": "http://www.city.sakata.lg.jp/ou/kikaku/toshidesign/toshidesign/pd0804200534.html",
+      "genre": "イベント"
+    },
+    {
+      "date": "2016-09-15",
+      "title": "酒田希望音楽祭2016 街かどコンサート",
+      "url": "http://www.city.sakata.lg.jp/ou/kyoiku/shakaikyoiku/geijyutu/machikado-concert.html",
+      "genre": "イベント"
+    },
+    {
+      "date": "2016-09-14",
+      "title": "さかた産業フェア2016 開催！",
+      "url": "http://www.city.sakata.lg.jp/ou/shoko/kowan/kigyo/sangyofair_2012_kokuchi.html",
+      "genre": "イベント"
+    }
+  ],
+  "myplEvents": [
+    {
+      "title": "Instagramフォローキャンペーン！ ★情熱が生んだ旨味・和豚もちぶた★",
+      "url": "https://sakata.mypl.net/shop/00000356158/news?d=3464692",
+      "category": "お店のイベント",
+      "shop": "和豚もちぶた 直売所",
+      "start": "2026-11-17",
+      "end": "2026-11-20"
+    },
+    {
+      "title": "本間家の浮世絵",
+      "url": "https://sakata.mypl.net/event/00000479154/",
+      "category": "展覧会",
+      "shop": "",
+      "start": "2026-11-17",
+      "end": "2026-12-14",
+      "dateText": "2026年10月31日(土) ～ 12月14日(月) 休館日 11月無休、12月毎週火曜・水曜休館 開館時間 9：00～16：30(最終入館16：00) ※ナイトミュージアム開…",
+      "place": "本間美術館",
+      "price": "大人1,300円、学生600円、中学生以下無料",
+      "periodStart": "2026-10-31",
+      "periodEnd": "2026-12-14"
+    },
+    {
+      "title": "企画展「酒田市大火から50年―1976.10.29 忘れない 猛火の記憶と復興までの歩みー」",
+      "url": "https://sakata.mypl.net/event/00000478119/",
+      "category": "展覧会",
+      "shop": "",
+      "start": "2026-11-17",
+      "end": "2026-12-16",
+      "dateText": "2026年10月3日(土) ～ 2027年2月14日(日) 月曜休館（祝日の場合は翌日） 9：00～16：30（最終入館16：00）",
+      "place": "酒田市文化資料館光丘文庫",
+      "price": "無料",
+      "periodStart": "2026-10-03",
+      "periodEnd": "2027-02-14"
+    },
+    {
+      "title": "玉芳庵イベント",
+      "url": "https://sakata.mypl.net/shop/00000371435/news?d=3437186",
+      "category": "お店のイベント",
+      "shop": "酒田玉泉院",
+      "start": "2026-11-19",
+      "end": "2026-11-25"
+    },
+    {
+      "title": "もへ！さかた！駅前イルミネーション点灯式2026",
+      "url": "https://sakata.mypl.net/event/00000480436/",
+      "category": "イルミ、ライトアップ",
+      "shop": "",
+      "start": "2026-11-20",
+      "end": "2026-11-20",
+      "dateText": "2026年11月20日(金) 18:00～",
+      "place": "酒田駅前光の湊",
+      "price": "無料",
+      "periodEnd": "2026-11-20",
+      "periodStart": "2026-11-20"
+    },
+    {
+      "title": "まちの「やってみたい」が集まる「酒田みらい見本市」",
+      "url": "https://sakata.mypl.net/event/00000480092/",
+      "category": "スクール、体験",
+      "shop": "",
+      "start": "2026-11-21",
+      "end": "2026-11-29",
+      "dateText": "2026年11月21日(土) ～ 11月29日(日) 10：00～17：00",
+      "place": "旧加藤邸",
+      "price": "入場無料",
+      "periodStart": "2026-11-21",
+      "periodEnd": "2026-11-29"
+    },
+    {
+      "title": "フリー撮影会",
+      "url": "https://sakata.mypl.net/shop/00000377584/news?d=3128142",
+      "category": "お店のイベント",
+      "shop": "Lachouette.TAMAHIME",
+      "start": "2026-11-21",
+      "end": "2026-11-29"
+    },
+    {
+      "title": "城址館コンサート「晩秋の響き-ヴァイオリン＆シンセサイザー」」",
+      "url": "https://sakata.mypl.net/event/00000479381/",
+      "category": "音楽イベント、コンサート、ライブ",
+      "shop": "",
+      "start": "2026-11-22",
+      "end": "2026-11-22",
+      "dateText": "2026年11月22日(日) 開演15：00（開場14：00）",
+      "place": "酒田市松山城址館",
+      "price": "前売り3,000円、当日3,500円",
+      "periodEnd": "2026-11-22",
+      "periodStart": "2026-11-22"
+    },
+    {
+      "title": "第57回酒田民俗芸能公演会 民俗芸能フェスタ2026",
+      "url": "https://sakata.mypl.net/event/00000479839/",
+      "category": "伝統芸能、大衆芸能",
+      "shop": "",
+      "start": "2026-11-22",
+      "end": "2026-11-22",
+      "dateText": "2026年11月22日(日) 開演12：30（開場12：00）",
+      "place": "酒田市民会館「希望ホール」",
+      "price": "無料",
+      "periodEnd": "2026-11-22",
+      "periodStart": "2026-11-22"
+    },
+    {
+      "title": "たくあん漬け教室",
+      "url": "https://sakata.mypl.net/shop/00000379340/news?d=3469803",
+      "category": "お店のイベント",
+      "shop": "農産物直売所みどりの里 山居館",
+      "start": "2026-11-22",
+      "end": "2026-11-22"
+    },
+    {
+      "title": "ススキで作る！ふくろう飾り教室",
+      "url": "https://sakata.mypl.net/event/00000477857/",
+      "category": "季節のイベント、行事",
+      "shop": "",
+      "start": "2026-11-26",
+      "end": "2026-11-26",
+      "dateText": "2026年11月26日(木) 10:00～12:00",
+      "place": "松嶺コミュニティセンター",
+      "price": "500円（材料費込み）",
+      "periodEnd": "2026-11-26",
+      "periodStart": "2026-11-26"
+    },
+    {
+      "title": "心と体を整える リラックス ヨガクラス",
+      "url": "https://sakata.mypl.net/event/00000475444/",
+      "category": "スクール、体験",
+      "shop": "",
+      "start": "2026-11-27",
+      "end": "2026-11-27",
+      "dateText": "2026年8月28日(金), 9月25日(金), 10月30日(金), 11月27日(金), 12月25日(金) 10：00～11：00",
+      "place": "酒田市松山城址館",
+      "price": "1,000円"
+    },
+    {
+      "title": "おはなしわーるど",
+      "url": "https://sakata.mypl.net/event/00000480177/",
+      "category": "子育てイベント",
+      "shop": "",
+      "start": "2026-11-28",
+      "end": "2026-11-28",
+      "dateText": "2026年11月28日(土) 10：30～",
+      "place": "遊佐町立図書館",
+      "price": "",
+      "periodEnd": "2026-11-28",
+      "periodStart": "2026-11-28"
+    },
+    {
+      "title": "光の湊・酒田三曲協会 イブニングコンサート",
+      "url": "https://sakata.mypl.net/event/00000480324/",
+      "category": "音楽イベント、コンサート、ライブ",
+      "shop": "",
+      "start": "2026-11-28",
+      "end": "2026-11-28",
+      "dateText": "2026年11月28日(土) 17：30～18：00",
+      "place": "酒田駅前交流拠点施設ミライニ",
+      "price": "無料",
+      "periodEnd": "2026-11-28",
+      "periodStart": "2026-11-28"
+    },
+    {
+      "title": "もしぇっとマルシェ3周年祭",
+      "url": "https://sakata.mypl.net/event/00000480514/",
+      "category": "市、フリーマーケット",
+      "shop": "",
+      "start": "2026-11-28",
+      "end": "2026-11-28",
+      "dateText": "2026年11月28日(土) 10：00～16：00",
+      "place": "余目第三まちづくりセンター",
+      "price": "入場無料",
+      "periodEnd": "2026-11-28",
+      "periodStart": "2026-11-28"
+    },
+    {
+      "title": "外村理紗＆小林愛実 デュオ・リサイタル",
+      "url": "https://sakata.mypl.net/event/00000475460/",
+      "category": "音楽イベント、コンサート、ライブ",
+      "shop": "",
+      "start": "2026-11-29",
+      "end": "2026-11-29",
+      "dateText": "2026年11月29日(日) 開演14：00（開場13：15）",
+      "place": "酒田市民会館「希望ホール」",
+      "price": "一般4,800円、学生（25歳以下）2,500円",
+      "periodEnd": "2026-11-29",
+      "periodStart": "2026-11-29"
+    },
+    {
+      "title": "MY English School SHONAI Christmas Village",
+      "url": "https://sakata.mypl.net/event/00000480330/",
+      "category": "季節のイベント、行事",
+      "shop": "",
+      "start": "2026-11-29",
+      "end": "2026-11-29",
+      "dateText": "2026年11月29日(日) 11：00～15：00",
+      "place": "酒田駅前交流拠点施設ミライニ",
+      "price": "入場無料（一部のアクティビティは有料）",
+      "periodEnd": "2026-11-29",
+      "periodStart": "2026-11-29"
+    },
+    {
+      "title": "庄内恋する作戦会議～恋活・婚活を始めたいあなたへ～",
+      "url": "https://sakata.mypl.net/event/00000480392/",
+      "category": "その他",
+      "shop": "",
+      "start": "2026-11-29",
+      "end": "2026-11-29",
+      "dateText": "2026年11月29日(日) 12:00～17:00",
+      "place": "イオンモール三川",
+      "price": "無料",
+      "periodEnd": "2026-11-29",
+      "periodStart": "2026-11-29"
+    },
+    {
+      "title": "玉芳庵イベント",
+      "url": "https://sakata.mypl.net/shop/00000371435/news?d=3441189",
+      "category": "お店のイベント",
+      "shop": "酒田玉泉院",
+      "start": "2026-12-01",
+      "end": "2026-12-12"
+    },
+    {
+      "title": "庄内浜の海岸林と海ごみ ーその現状と再生を考えるー",
+      "url": "https://sakata.mypl.net/event/00000480321/",
+      "category": "講演、シンポジウム",
+      "shop": "",
+      "start": "2026-12-05",
+      "end": "2026-12-05",
+      "dateText": "2026年12月5日(土) 14：00～16：30",
+      "place": "東北公益文科大学 鶴岡キャンパス大学院ホール",
+      "price": "無料",
+      "periodEnd": "2026-12-05",
+      "periodStart": "2026-12-05"
+    },
+    {
+      "title": "眺海の森 森林教室",
+      "url": "https://sakata.mypl.net/event/00000472031/",
+      "category": "アウトドアのイベント",
+      "shop": "",
+      "start": "2026-12-06",
+      "end": "2026-12-06",
+      "dateText": "2026年6月21日(日), 8月2日(日), 10月4日(日), 11月1日(日), 12月6日(日) 10：00～15：00 雨天決行",
+      "place": "眺海の森 森林学習展示館",
+      "price": "1人1,500円（昼食代込、「森の家」そば割引券付）"
+    },
+    {
+      "title": "モンゴルDAY「聴いて、触れて、知る馬頭琴の世界」",
+      "url": "https://sakata.mypl.net/event/00000480060/",
+      "category": "講演、シンポジウム",
+      "shop": "",
+      "start": "2026-12-06",
+      "end": "2026-12-06",
+      "dateText": "2026年12月6日(日) 13:30～15:30",
+      "place": "酒田市交流ひろば",
+      "price": "無料",
+      "periodEnd": "2026-12-06",
+      "periodStart": "2026-12-06"
+    },
+    {
+      "title": "はじめましては、乾杯から。【参加者募集！】",
+      "url": "https://sakata.mypl.net/event/00000480396/",
+      "category": "その他",
+      "shop": "",
+      "start": "2026-12-06",
+      "end": "2026-12-06",
+      "dateText": "2026年12月6日(日) 17:00～19:00",
+      "place": "大人の大衆酒場 ベルウッド",
+      "price": "男性6,000円、女性2,000円（飲食代、飲み放題付き）",
+      "periodEnd": "2026-12-06",
+      "periodStart": "2026-12-06"
+    },
+    {
+      "title": "おそば屋さんに教わる そば打ち体験",
+      "url": "https://sakata.mypl.net/event/00000480684/",
+      "category": "スクール、体験",
+      "shop": "",
+      "start": "2026-12-06",
+      "end": "2026-12-06",
+      "dateText": "2026年12月6日(日) 9：30～13：00（受付9：15～）",
+      "place": "浜田コミュニティ防災センター",
+      "price": "1人2,000円（材料費・体験料）",
+      "periodEnd": "2026-12-06",
+      "periodStart": "2026-12-06"
+    },
+    {
+      "title": "まほうのじゅうたんおはなし会",
+      "url": "https://sakata.mypl.net/event/00000469035/",
+      "category": "子育てイベント",
+      "shop": "",
+      "start": "2026-12-12",
+      "end": "2026-12-12",
+      "dateText": "2026年4月11日(土), 5月9日(土), 6月13日(土), 7月11日(土), 8月1日(土), 9月12日(土), 10月10日(土), 11月14日(土), 12月…",
+      "place": "遊佐町立図書館",
+      "price": ""
+    },
+    {
+      "title": "ソーシャル風車市",
+      "url": "https://sakata.mypl.net/event/00000379822/",
+      "category": "市、フリーマーケット",
+      "shop": "",
+      "start": "2026-12-13",
+      "end": "2026-12-13",
+      "dateText": "2026年11月8日(日), 12月13日(日) 10：00～16：00",
+      "place": "道の駅しょうない 風車市場",
+      "price": ""
+    }
+  ]
+}
