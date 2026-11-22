@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>松本くにひろ｜酒田市議会議員</title>
+  <meta name="description" content="酒田市議会議員 松本くにひろ の公式ページ。活動報告、酒田市のお知らせ、酒田のイベント、天気を毎日更新。">
+  <meta name="theme-color" content="#1d3557">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="松本くにひろ｜酒田市議会議員">
+  <meta property="og:description" content="活動報告・酒田市のお知らせ・イベント・天気を毎日更新">
+  <link rel="icon" href="images/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js"></script>
+</head>
+<body>
+
+<div class="layout">
+  <!-- ===== 上半分：写真 ===== -->
+  <header class="hero" id="hero">
+    <div class="hero__img" id="heroImg" role="img" aria-label="トップ写真"></div>
+    <div class="hero__shade"></div>
+    <div class="hero__text">
+      <p class="hero__title" id="siteTitle">酒田市議会議員</p>
+      <h1 class="hero__name"><span id="siteName">松本くにひろ</span></h1>
+      <p class="hero__catch" id="siteCatch"></p>
+      <ul class="hero__tags" id="siteTags" aria-label="キーワード"></ul>
+    </div>
+    <a class="hero__more" href="#about" aria-label="プロフィールへ">プロフィール
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </a>
+  </header>
+
+  <!-- ===== 下半分：4つの情報 ===== -->
+  <main class="board" id="board">
+    <nav class="tabs" role="tablist" aria-label="情報の切り替え">
+      <button class="tab" role="tab" id="tab-fb" aria-controls="panel-fb" data-i="0">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>
+        <span>活動報告</span>
+      </button>
+      <button class="tab" role="tab" id="tab-news" aria-controls="panel-news" data-i="1">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21v-7M15 21v-7M2 10l10-6 10 6z"/></svg>
+        <span>市のお知らせ</span>
+      </button>
+      <button class="tab" role="tab" id="tab-event" aria-controls="panel-event" data-i="2">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M12 13.2l1 2 2.2.3-1.6 1.5.4 2.2-2-1-2 1 .4-2.2-1.6-1.5 2.2-.3z" class="fill"/></svg>
+        <span>イベント</span>
+      </button>
+      <button class="tab" role="tab" id="tab-weather" aria-controls="panel-weather" data-i="3">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="9" r="3.2"/><path d="M9 2.5v1.6M3.6 4.6l1.1 1.1M2.5 9h1.6M14.4 4.6l-1.1 1.1"/><path d="M8 20h10a3.5 3.5 0 0 0 .3-7 5 5 0 0 0-9.6 1.2A3 3 0 0 0 8 20z"/></svg>
+        <span>天気<b class="tab__temp" id="tabTemp"></b></span>
+      </button>
+      <i class="tabs__bar" id="tabBar" aria-hidden="true"></i>
+    </nav>
+
+    <div class="panels" id="panels">
+      <!-- ① 活動報告（Facebook） -->
+      <section class="panel" role="tabpanel" id="panel-fb" aria-labelledby="tab-fb">
+        <div class="panel__inner panel__inner--fb" id="fbBox"></div>
+      </section>
+
+      <!-- ② 酒田市のお知らせ -->
+      <section class="panel" role="tabpanel" id="panel-news" aria-labelledby="tab-news">
+        <div class="panel__inner">
+          <div class="chips" id="newsChips" role="group" aria-label="分野で絞り込み"></div>
+          <ul class="list" id="newsList"><li class="loading">読み込み中…</li></ul>
+          <p class="src">出典：<a href="https://www.city.sakata.lg.jp/allNewsList.html" target="_blank" rel="noopener">酒田市公式ウェブサイト 新着一覧</a></p>
+        </div>
+      </section>
+
+      <!-- ③ 酒田のイベント -->
+      <section class="panel" role="tabpanel" id="panel-event" aria-labelledby="tab-event">
+        <div class="panel__inner">
+          <div class="seg" role="group" aria-label="イベントの種類">
+            <button class="seg__btn is-on" data-src="mypl">民間・地域<small>まいぷれ酒田</small></button>
+            <button class="seg__btn" data-src="machiiro">市・行政<small>マチイロ</small></button>
+          </div>
+          <div id="eventList"><p class="loading">読み込み中…</p></div>
+        </div>
+      </section>
+
+      <!-- ④ 酒田の天気 -->
+      <section class="panel" role="tabpanel" id="panel-weather" aria-labelledby="tab-weather">
+        <div class="panel__inner" id="weatherBox"><p class="loading">読み込み中…</p></div>
+      </section>
+    </div>
+  </main>
+</div>
+
+<!-- ===== ここから下はスクロールで表示 ===== -->
+<section class="about" id="about">
+  <div class="about__inner">
+    <h2 class="about__h">プロフィール</h2>
+    <div class="about__card">
+      <p class="about__name"><span id="aboutName"></span><small id="aboutKana"></small></p>
+      <p class="about__title" id="aboutTitle"></p>
+      <p class="about__text" id="aboutText"></p>
+      <dl class="about__dl" id="aboutDl"></dl>
+    </div>
+    <div id="contactBox"></div>
+  </div>
+</section>
+
+<footer class="foot">
+  <p class="foot__upd" id="updated"></p>
+  <p class="foot__src">
+    情報の出典：
+    <a href="https://www.city.sakata.lg.jp/" target="_blank" rel="noopener">酒田市公式ウェブサイト</a> ／
+    <a href="https://machiiro.town/lp/yamagata_sakata" target="_blank" rel="noopener">マチイロ（私の街さかた）</a> ／
+    <a href="https://sakata.mypl.net/event/" target="_blank" rel="noopener">まいぷれ［酒田］</a> ／
+    天気：<a href="https://www.jma.go.jp/bosai/forecast/#area_type=class20s&area_code=0620400" target="_blank" rel="noopener">気象庁</a>・<a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>
+  </p>
+  <p class="foot__note">各情報は自動で取り込んでいます。詳しい内容・最新の状況は、必ずリンク先でご確認ください。</p>
+  <p class="foot__copy">© <span id="copyName"></span></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
