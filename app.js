@@ -33,7 +33,7 @@
     if (C.name) { $('#siteName').textContent = C.name; $('#aboutName').textContent = C.name; $('#copyName').textContent = C.name; }
     if (C.title) { $('#siteTitle').textContent = C.title; $('#aboutTitle').textContent = C.title; }
     $('#siteCatch').textContent = C.catchphrase || '';
-    $('#siteTags').innerHTML = (C.keywords || []).map((k) => `<li>${esc(k)}</li>`).join('');
+    $('#siteTags').textContent = (C.keywords || []).length ? `「${C.keywords.join('　')}」\nをPRしていきます！` : '';
     $('#aboutKana').textContent = C.nameKana || '';
     $('#aboutText').textContent = C.profileText || '';
     const img = $('#heroImg');
@@ -41,6 +41,23 @@
     if (C.heroPosition) img.style.backgroundPosition = C.heroPosition;
 
     $('#aboutDl').innerHTML = (C.profile || []).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
+
+    // 略歴・現在・座右の銘
+    const line = (l) => Array.isArray(l)
+      ? `<li><span>${esc(l[0])}</span><em>${esc(l[1])}</em></li>`
+      : `<li><span>${esc(l)}</span></li>`;
+    const more = [];
+    if ((C.career || []).length) {
+      more.push(`<section class="pf"><h3 class="pf__h">略歴</h3>${C.career.map((g) =>
+        `<div class="pf__group"><p class="pf__head">${esc(g.head)}</p>${(g.lines || []).length ? `<ul class="pf__list">${g.lines.map(line).join('')}</ul>` : ''}</div>`).join('')}</section>`);
+    }
+    if ((C.current || []).length) {
+      more.push(`<section class="pf pf--now"><h3 class="pf__h">現在</h3><ul class="pf__list">${C.current.map(line).join('')}</ul></section>`);
+    }
+    if (C.motto && C.motto.text) {
+      more.push(`<section class="pf motto"><h3 class="motto__h">座右の銘</h3><p class="motto__text">「${esc(C.motto.text)}」</p>${C.motto.sub ? `<p class="motto__sub">${esc(C.motto.sub)}</p>` : ''}</section>`);
+    }
+    $('#aboutMore').innerHTML = more.join('');
 
     const ct = C.contact || {};
     const rows = [];
