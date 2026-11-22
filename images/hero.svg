@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" preserveAspectRatio="xMidYMid slice">
+  <!-- 仮の写真：鳥海山と日本海の夕景。images/hero.jpg などの写真に差し替えてください -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d3557"/>
+      <stop offset="0.45" stop-color="#5b6c9a"/>
+      <stop offset="0.72" stop-color="#e9a87c"/>
+      <stop offset="0.82" stop-color="#f6c98f"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a5a86"/>
+      <stop offset="1" stop-color="#14263f"/>
+    </linearGradient>
+    <linearGradient id="mt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4b5d84"/>
+      <stop offset="1" stop-color="#2b3a5c"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff3d6"/>
+      <stop offset="0.5" stop-color="#ffd08a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffb26b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="900" fill="url(#sky)"/>
+  <circle cx="610" cy="610" r="120" fill="url(#sun)"/>
+  <!-- 鳥海山 -->
+  <path d="M0 640 L120 600 L260 470 L330 420 L370 395 L410 405 L470 450 L560 520 L680 580 L800 610 L800 700 L0 700 Z" fill="url(#mt)"/>
+  <path d="M300 445 L330 420 L370 395 L410 405 L450 435 L425 440 L405 428 L385 444 L360 430 L338 450 L318 444 Z" fill="#eef2f8" opacity="0.92"/>
+  <!-- 手前の丘・街 -->
+  <path d="M0 690 Q200 660 400 680 T800 670 L800 720 L0 720 Z" fill="#22304d"/>
+  <g fill="#1a253d">
+    <rect x="80" y="664" width="14" height="30"/><rect x="98" y="672" width="22" height="22"/>
+    <rect x="520" y="660" width="10" height="34"/><rect x="534" y="668" width="26" height="26"/>
+    <rect x="566" y="674" width="14" height="20"/>
+  </g>
+  <!-- 日本海 -->
+  <rect y="700" width="800" height="200" fill="url(#sea)"/>
+  <g stroke="#f6c98f" stroke-linecap="round" opacity="0.55">
+    <line x1="560" y1="725" x2="660" y2="725" stroke-width="4"/>
+    <line x1="580" y1="748" x2="640" y2="748" stroke-width="3"/>
+    <line x1="595" y1="770" x2="625" y2="770" stroke-width="3"/>
+  </g>
+  <g stroke="#9fb3d6" stroke-linecap="round" opacity="0.25" stroke-width="2">
+    <line x1="60" y1="760" x2="180" y2="760"/><line x1="240" y1="800" x2="400" y2="800"/>
+    <line x1="120" y1="840" x2="220" y2="840"/>
+  </g>
+</svg>
