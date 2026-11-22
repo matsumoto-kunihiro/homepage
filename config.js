@@ -16,7 +16,10 @@ window.SITE_CONFIG = {
   // 横長より「縦長〜正方形」の写真がスマホでは見栄えします。
   heroImage: 'images/hero.jpg',
   // 写真のどこを中心に見せるか（例: 'center 30%' で少し上寄り）
+  // ※パソコンの広い画面で使われます（スマホでは写真を右に寄せ、顔の上を表示）
   heroPosition: '55% 10%',
+  // スマホで文字を置く左側の背景色（写真の背景の緑に合わせています。写真を変えたら調整）
+  heroBackground: 'linear-gradient(180deg, #95daa3 0%, #8ed59d 50%, #78c58a 100%)',
 
   // ── ① Facebookページ ──
   // 議員用Facebookページの URL を入れると、最新投稿が自動で表示されます。
