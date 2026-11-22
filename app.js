@@ -39,6 +39,8 @@
     const img = $('#heroImg');
     img.style.backgroundImage = `url("${C.heroImage || 'images/hero.svg'}")`;
     if (C.heroPosition) img.style.backgroundPosition = C.heroPosition;
+    // スマホで文字を置く左側の背景色（写真の背景に合わせる）
+    if (C.heroBackground) $('.hero').style.setProperty('--hero-bg', C.heroBackground);
 
     $('#aboutDl').innerHTML = (C.profile || []).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
 
