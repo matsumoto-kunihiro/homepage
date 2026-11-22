@@ -1,23 +1,29 @@
 {
-  "updatedAt": "2026-11-22T03:46:43.790Z",
+  "updatedAt": "2026-11-22T09:43:31.384Z",
   "sources": {
     "cityNews": {
       "ok": true,
-      "at": "2026-11-22T03:46:43.790Z",
+      "at": "2026-11-22T09:43:31.384Z",
       "count": 40
     },
     "machiiroEvents": {
       "ok": true,
-      "at": "2026-11-22T03:46:43.790Z",
+      "at": "2026-11-22T09:43:31.384Z",
       "count": 14
     },
     "myplEvents": {
       "ok": true,
-      "at": "2026-11-22T03:46:43.790Z",
+      "at": "2026-11-22T09:43:31.384Z",
       "count": 29
     }
   },
   "cityNews": [
+    {
+      "date": "2026-11-22",
+      "title": "市長公務日程",
+      "url": "https://www.city.sakata.lg.jp/shisei/shicyou/koumunittei07.html",
+      "category": "市政"
+    },
     {
       "date": "2026-11-20",
       "title": "「さかポス」にみなさんの声をお寄せください",
@@ -113,12 +119,6 @@
       "title": "子育てをする「パパ・ママ」のための小児・乳幼児の救急講習会を開催しました",
       "url": "https://www.city.sakata.lg.jp/bousai/syobokyukyu/syobooshirase/shobo0520190820.html",
       "category": "防災"
-    },
-    {
-      "date": "2026-11-15",
-      "title": "市長公務日程",
-      "url": "https://www.city.sakata.lg.jp/shisei/shicyou/koumunittei07.html",
-      "category": "市政"
     },
     {
       "date": "2026-11-13",
