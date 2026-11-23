@@ -131,11 +131,12 @@ svg { display: block; }
 }
 /* ---- スマホ：写真を右に寄せ、文字は左の背景部分へ（顔に文字がかからない） ---- */
 @media (max-width: 899px) {
-  .hero { container-type: size; background: var(--hero-bg, var(--navy)); color: var(--navy); }
+  /* 写真は握りこぶしの上でカット → その分、写真の枠を低くして下のタブを上げる */
+  .hero { flex-basis: 40%; container-type: size; background: var(--hero-bg, var(--navy)); color: var(--navy); }
   .hero__img {
-    inset: 0 auto 0 auto;
-    right: -16cqh;                      /* 写真の右端（背景だけの部分）を少し外へ */
-    width: auto; height: 100%;
+    inset: 0 auto auto auto;
+    right: -20cqh;                      /* 写真の右端（背景だけの部分）を少し外へ */
+    width: auto; height: 124cqh;        /* 枠より高くして、下（こぶし）は枠の外＝見えない */
     aspect-ratio: var(--hero-ratio, 1100 / 1255);
     background-position: center top;
     -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 16%);
@@ -143,21 +144,36 @@ svg { display: block; }
   }
   .hero__shade { display: none; }
   .hero__text {
-    top: 0; bottom: 14cqh; left: 14px; right: auto;   /* 下は握りこぶしにかからない高さまで */
-    width: calc(100cqw - 45cqh - 14px);
+    top: 0; bottom: 18px; left: 14px; right: auto;   /* 下はタブのバーに隠れない高さまで */
+    width: calc(100cqw - 57cqh - 14px);
     display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
     text-shadow: none;
   }
   .hero__title { font-size: 26px; padding: 2px 10px; letter-spacing: .02em; margin-bottom: 6px; color: #fff; }
-  .hero__name { font-size: min(calc((100cqw - 45cqh - 14px) / 6), 46px); color: var(--navy); letter-spacing: .04em; white-space: nowrap; line-height: 1.2; }
-  .hero__catch { font-size: 12.5px; color: #16304d; opacity: 1; margin-top: 2px; }
+  .hero__name { font-size: min(calc((100cqw - 57cqh - 14px) / 6), 46px); color: var(--navy); letter-spacing: .04em; white-space: nowrap; line-height: 1.12; }
+  .hero__catch { font-size: 12px; line-height: 1.45; color: #16304d; opacity: 1; margin-top: 2px; }
   .hero__pr {
     font-size: 12px; color: var(--navy);
     background: rgba(255,255,255,.6); border-color: rgba(255,255,255,.85);
     padding: 2px 8px; margin-top: 4px;
     word-break: keep-all; overflow-wrap: anywhere;   /* 「ラーメ／ン」のような途中改行をさせない */
   }
-  .hero__more { background: rgba(29,53,87,.72); border-color: transparent; }
+  /* 「プロフィール」は縦書きにして、頭の右側のすき間（背景の緑）に置く */
+  .hero__more {
+    top: 12px; right: 8px;
+    writing-mode: vertical-rl;
+    padding: 10px 5px 6px; gap: 4px;
+    font-size: 12.5px; letter-spacing: .08em;
+    border-radius: 14px;
+    background: rgba(29,53,87,.72); border-color: transparent;
+  }
+  .hero__more svg { width: 16px; height: 16px; transform: rotate(90deg); }
+}
+/* 「プロフィール」ボタンの軽い点滅（オレンジにふんわり光る） */
+.hero__more { animation: moreBlink 2s ease-in-out infinite; }
+@keyframes moreBlink {
+  0%, 100% { box-shadow: 0 0 0 rgba(217,120,63,0); }
+  50% { background-color: rgba(217,120,63,.92); box-shadow: 0 0 14px rgba(217,120,63,.75); }
 }
 .hero__more svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 
@@ -199,18 +215,23 @@ svg { display: block; }
   position: relative;
   isolation: isolate;
 }
-/* ボタンの点滅（オレンジの光がふわっと点いたり消えたり。4つが順番に） */
+/* ボタンの点滅（はっきり点灯・消灯。点灯中は文字が白に。4つが順番に） */
+.tab { animation: tabBlinkText 1.2s linear infinite; }
 .tab::before {
   content: ''; position: absolute; inset: 5px 3px; z-index: -1;
   border-radius: 12px;
   background: var(--accent);
+  box-shadow: 0 0 12px rgba(217,120,63,.8);
   opacity: 0;
-  animation: tabBlink 1.6s ease-in-out infinite;
+  animation: tabBlink 1.2s linear infinite;
 }
-.tab:nth-child(2)::before { animation-delay: .2s; }
-.tab:nth-child(3)::before { animation-delay: .4s; }
-.tab:nth-child(4)::before { animation-delay: .6s; }
-@keyframes tabBlink { 0%, 100% { opacity: 0; } 50% { opacity: .28; } }
+.tab:nth-child(2), .tab:nth-child(2)::before { animation-delay: .2s; }
+.tab:nth-child(3), .tab:nth-child(3)::before { animation-delay: .4s; }
+.tab:nth-child(4), .tab:nth-child(4)::before { animation-delay: .6s; }
+@keyframes tabBlink { 0%, 45% { opacity: 1; } 55%, 100% { opacity: 0; } }
+.tab { --tab-c: var(--ink-3); }
+.tab[aria-selected="true"] { --tab-c: var(--navy); }
+@keyframes tabBlinkText { 0%, 45% { color: #fff; } 55%, 100% { color: var(--tab-c); } }
 .tab svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .tab svg .fill { fill: currentColor; stroke: none; }
 .tab[aria-selected="true"] { color: var(--navy); }
@@ -508,5 +529,7 @@ svg { display: block; }
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .hero__img { transform: none; }
   /* ボタンの点滅はご要望のため、この設定でも残す */
-  .tab::before { animation: tabBlink 1.6s ease-in-out infinite !important; }
+  .tab::before { animation: tabBlink 1.2s linear infinite !important; }
+  .tab { animation: tabBlinkText 1.2s linear infinite !important; }
+  .hero__more { animation: moreBlink 2s ease-in-out infinite !important; }
 }
