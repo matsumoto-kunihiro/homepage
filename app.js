@@ -194,7 +194,8 @@
   // =============================================================
   let newsFilter = 'すべて';
   function renderNews() {
-    const items = DATA.cityNews || [];
+    // 期限（締切日・開催日）が過ぎたものは表示しない（取り込み後に日付が変わった場合のため）
+    const items = (DATA.cityNews || []).filter((x) => !(x.deadline && x.deadline < TODAY));
     const cats = ['すべて', ...new Set(items.map((x) => x.category))];
     if (!cats.includes(newsFilter)) newsFilter = 'すべて';
     $('#newsChips').innerHTML = items.length > 0 ? cats.map((c) =>
@@ -234,7 +235,7 @@
     $$('.seg__btn').forEach((b) => b.classList.toggle('is-on', b.dataset.src === evSrc));
     const box = $('#eventList');
     if (evSrc === 'machiiro') {
-      const items = DATA.machiiroEvents || [];
+      const items = (DATA.machiiroEvents || []).filter((x) => !(x.deadline && x.deadline < TODAY));
       box.innerHTML = staleNote('machiiroEvents') + (items.length ? `<ul class="list">${items.map((x) => {
         const isNew = diffDays(TODAY, x.date) <= 3;
         return `<li><a class="item" href="${esc(x.url)}" target="_blank" rel="noopener">
