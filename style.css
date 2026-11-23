@@ -215,23 +215,39 @@ svg { display: block; }
   position: relative;
   isolation: isolate;
 }
-/* ボタンの点滅（はっきり点灯・消灯。点灯中は文字が白に。4つが順番に） */
-.tab { animation: tabBlinkText 1.2s linear infinite; }
-.tab::before {
-  content: ''; position: absolute; inset: 5px 3px; z-index: -1;
-  border-radius: 12px;
-  background: var(--accent);
-  box-shadow: 0 0 12px rgba(217,120,63,.8);
-  opacity: 0;
-  animation: tabBlink 1.2s linear infinite;
+/* 吹き出し「押して下さい」：4つのボタンの上を左右に行き来する */
+.tabhint {
+  position: absolute; left: 6px; bottom: 100%; z-index: 3;
+  width: calc((100% - 12px) / 4);     /* ボタン1つ分の幅。これを1つずつずらして動かす */
+  margin-bottom: 4px;
+  display: flex; justify-content: center;
+  pointer-events: none;
+  animation: hintMove 10s ease-in-out infinite;
 }
-.tab:nth-child(2), .tab:nth-child(2)::before { animation-delay: .2s; }
-.tab:nth-child(3), .tab:nth-child(3)::before { animation-delay: .4s; }
-.tab:nth-child(4), .tab:nth-child(4)::before { animation-delay: .6s; }
-@keyframes tabBlink { 0%, 45% { opacity: 1; } 55%, 100% { opacity: 0; } }
-.tab { --tab-c: var(--ink-3); }
-.tab[aria-selected="true"] { --tab-c: var(--navy); }
-@keyframes tabBlinkText { 0%, 45% { color: #fff; } 55%, 100% { color: var(--tab-c); } }
+.tabhint span {
+  position: relative;
+  padding: 4px 10px;
+  font-size: 13px; font-weight: 700; white-space: nowrap; letter-spacing: .04em;
+  color: #fff; background: var(--accent);
+  border-radius: 999px;
+  box-shadow: 0 3px 10px rgba(10,20,40,.28);
+  animation: hintBob 1s ease-in-out infinite;
+}
+.tabhint span::after {               /* 下向きのしっぽ */
+  content: ''; position: absolute; left: 50%; top: 100%;
+  margin-left: -6px;
+  border: 6px solid transparent; border-top: 7px solid var(--accent); border-bottom: 0;
+}
+@keyframes hintMove {
+  0%, 8%    { transform: translateX(0); }
+  16%, 24%  { transform: translateX(100%); }
+  32%, 40%  { transform: translateX(200%); }
+  48%, 58%  { transform: translateX(300%); }
+  66%, 74%  { transform: translateX(200%); }
+  82%, 90%  { transform: translateX(100%); }
+  100%      { transform: translateX(0); }
+}
+@keyframes hintBob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
 .tab svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .tab svg .fill { fill: currentColor; stroke: none; }
 .tab[aria-selected="true"] { color: var(--navy); }
@@ -520,6 +536,9 @@ svg { display: block; }
   .hero { flex: 1 1 55%; min-width: 0; }
   .board { flex: 0 0 min(480px, 45%); width: min(480px, 45%); min-width: 0; margin-top: 0; border-radius: 0; box-shadow: -6px 0 20px rgba(10,20,40,.12); }
   .tabs { border-radius: 0; }
+  /* 広い画面ではボタンの上が画面の端なので、吹き出しはボタンの下に */
+  .tabhint { bottom: auto; top: 100%; margin: 6px 0 0; }
+  .tabhint span::after { top: auto; bottom: 100%; border-top: 0; border-bottom: 7px solid var(--accent); }
   .hero__text { left: 48px; bottom: 48px; }
   .hero__name { font-size: clamp(40px, 4.6vw, 72px); white-space: nowrap; }
   .hero__catch { font-size: 17px; }
@@ -528,8 +547,8 @@ svg { display: block; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .hero__img { transform: none; }
-  /* ボタンの点滅はご要望のため、この設定でも残す */
-  .tab::before { animation: tabBlink 1.2s linear infinite !important; }
-  .tab { animation: tabBlinkText 1.2s linear infinite !important; }
+  /* 吹き出しの動きはご要望のため、この設定でも残す */
+  .tabhint { animation: hintMove 10s ease-in-out infinite !important; }
+  .tabhint span { animation: hintBob 1s ease-in-out infinite !important; }
   .hero__more { animation: moreBlink 2s ease-in-out infinite !important; }
 }
