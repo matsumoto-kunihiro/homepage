@@ -56,6 +56,101 @@ function todayJST() {
   return { y: d.getUTCFullYear(), m: d.getUTCMonth() + 1, d: d.getUTCDate() };
 }
 
+// ---------- 期限（締切日・開催日）の読み取り ----------
+//  タイトルや記事本文から「〇月〇日まで」「〇月〇日～〇月〇日」「日時 〇月〇日」などを探し、
+//  いちばん遅い日付を「期限」とする。見つからなければ期限なし（＝表示し続ける）。
+
+const todayISO = () => { const t = todayJST(); return iso(t.y, t.m, t.d); };
+const addDaysISO = (s, n) => { const d = new Date(s + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
+
+// 日付1つ（令和/西暦の年は省略可）
+const D = String.raw`(?:(令和|R)\s*(\d{1,2}|元)\s*年|(\d{4})\s*年)?\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日`;
+const DOW = String.raw`(?:\s*[（(][^）)]{1,6}[）)])?`;
+
+function toISO(m, base, off = 0) {
+  // m = 正規表現の一致、off = D の最初のグループ位置
+  const era = m[off + 1], ey = m[off + 2], yy = m[off + 3];
+  const mon = Number(m[off + 4]), day = Number(m[off + 5]);
+  if (mon < 1 || mon > 12 || day < 1 || day > 31) return null;
+  let y;
+  if (era) y = 2018 + (ey === '元' ? 1 : Number(ey));
+  else if (yy) y = Number(yy);
+  else {
+    // 年が書かれていない → 掲載日（base）に近い年と考える
+    y = Number(base.slice(0, 4));
+    const cand = iso(y, mon, day);
+    if (cand < addDaysISO(base, -120)) y += 1;
+    else if (cand > addDaysISO(base, 300)) y -= 1;
+  }
+  return iso(y, mon, day);
+}
+
+// strict=true（市のお知らせの本文用）：見出し付きの日付と「〇日まで」だけを使う。
+//   「4月1日～9月30日に申請した方は…」のような説明文の期間で、続いている事業を消さないため。
+function findDeadline(str, base, strict = false) {
+  if (!str) return null;
+  const found = [];
+  const push = (v) => { if (v) found.push(v); };
+  // ① 「〇月〇日まで」「〇月〇日（金）午後5時まで」「〇月〇日締切」
+  for (const m of str.matchAll(new RegExp(D + DOW + String.raw`[^。\n月]{0,16}?(?:まで|迄|締め?切|〆切|必着)`, 'g'))) push(toISO(m, base));
+  if (!strict) {
+    // ② 「〇月〇日～〇月〇日」「〇月〇日から〇月〇日」→ 後ろの日付
+    for (const m of str.matchAll(new RegExp(D + DOW + String.raw`[^。\n]{0,14}?(?:[～〜~－ー-]|から)\s*` + D, 'g'))) push(toISO(m, base, 5));
+    // ③ 「〇月〇日から〇日」（月の省略）
+    for (const m of str.matchAll(new RegExp(D + DOW + String.raw`\s*(?:[～〜~]|から)\s*(\d{1,2})\s*日`, 'g'))) {
+      const s = toISO(m, base);
+      if (s) push(s.slice(0, 8) + pad(Number(m[6])));
+    }
+  }
+  // ④ 「日時」「開催日」「申込期間」「締切」などの見出しの後ろの日付
+  for (const m of str.matchAll(/(?:日時|開催日時?|期日|日程|期間|会期|締め?切り?|〆切|期限)\s*[:：]?\s*([^\n]{0,60})/g)) {
+    for (const d of m[1].matchAll(new RegExp(D, 'g'))) {
+      // 「〇月〇日から当面の間」のような“始まりの日”は期限にしない
+      const after = m[1].slice(d.index + d[0].length, d.index + d[0].length + 18);
+      if (/^[^。\n]*?(から|以降|より)/.test(after) && !new RegExp(D).test(after)) continue;
+      push(toISO(d, base));
+    }
+  }
+  // ⑤ 「〇月〇日に開催」「〇月〇日開催」
+  for (const m of str.matchAll(new RegExp(D + DOW + String.raw`\s*(?:に)?(?:開催|実施|行い)`, 'g'))) push(toISO(m, base));
+  return found.length ? found.sort().at(-1) : null;
+}
+
+/** 記事ページの本文（更新日の後ろ〜お問い合わせの前）を取り出す */
+function pageBody(html) {
+  let t = text(html.replace(/<(script|style|nav|header|footer)[\s\S]*?<\/\1>/gi, ''));
+  const s = t.search(/更新日[:：]?\s*\d{4}年/);
+  if (s >= 0) t = t.slice(s);
+  // 本文の終わり（ここから先はサイト共通の案内や開庁時間「12月29日～1月3日を除く」などなので読まない）
+  const e = t.search(/おすすめ情報|PDF形式のファイルを開くには|\nお問い合わせ\n|このページに関するお問い合わせ|このページの情報は役に立ちましたか|このページの先頭へ|開庁時間/);
+  if (e > 0) t = t.slice(0, e);
+  return t.slice(0, 4000);
+}
+
+/**
+ * 各記事に deadline（期限）を付ける。記事ページは前回の結果を再利用し、新しい記事だけ見に行く。
+ * cache: url → { date, deadline }
+ */
+async function attachDeadlines(items, cache, { strict = false } = {}) {
+  for (const it of items) {
+    const c = cache.get(it.url);
+    if (c && c.date === it.date && 'deadline' in c) { it.deadline = c.deadline; continue; }
+    let dl = findDeadline(it.title, it.date);
+    if (/^https:\/\/www\.city\.sakata\.lg\.jp\//.test(it.url)) {
+      try {
+        const body = pageBody(await fetchText(it.url, { retries: 1 }));
+        const d2 = findDeadline(body, it.date, strict);
+        if (d2 && (!dl || d2 > dl)) dl = d2;
+      } catch (e) {
+        console.warn('  記事ページ取得失敗:', it.title, e.message);
+      }
+      await sleep(1000);
+    }
+    it.deadline = dl;
+    cache.set(it.url, { date: it.date, deadline: dl });
+  }
+}
+
 // ---------- ② 酒田市HP 新着情報 ----------
 
 const CITY_BASE = 'https://www.city.sakata.lg.jp';
@@ -87,7 +182,7 @@ async function getCityNews() {
       url,
       category: CITY_CATEGORY[top] || 'お知らせ',
     });
-    if (items.length >= 40) break;
+    if (items.length >= 50) break;   // 期限切れを外したあと 40件前後になるよう少し多めに
   }
   if (!items.length) throw new Error('酒田市HP: 記事が0件でした');
   return items;
@@ -236,9 +331,33 @@ async function main() {
     myplEvents: prev.myplEvents || [],
   };
 
+  // 期限の読み取り結果を前回分から再利用（記事ページへのアクセスを減らす）
+  const cacheOf = (list) => new Map((list || []).filter((it) => 'deadline' in it).map((it) => [it.url, { date: it.date, deadline: it.deadline }]));
+  const cityCache = cacheOf(prev.cityNews);
+  const machiiroCache = cacheOf(prev.machiiroEvents);
+  const today = todayISO();
+  const REPORT = /(開催|実施)(しました|されました)|行いました|終了しました|が開催されました/;
+
   const jobs = [
-    ['cityNews', '酒田市HP 新着情報', () => getCityNews()],
-    ['machiiroEvents', 'マチイロ イベント', () => getMachiiro(1, 20)],
+    ['cityNews', '酒田市HP 新着情報', async () => {
+      const items = await getCityNews();
+      await attachDeadlines(items, cityCache, { strict: true });
+      // 期限（締切日・開催日）が過ぎたものは載せない
+      const keep = items.filter((x) => !(x.deadline && x.deadline < today));
+      items.filter((x) => !keep.includes(x)).forEach((x) => console.log(`\n  期限切れで除外: [${x.deadline}] ${x.title}`));
+      return keep.slice(0, 40);
+    }],
+    ['machiiroEvents', 'マチイロ イベント', async () => {
+      const items = await getMachiiro(1, 20);
+      await attachDeadlines(items, machiiroCache);
+      const keep = items.filter((x) => {
+        if (REPORT.test(x.title)) return false;           // 「開催しました」等の報告 → 外す
+        if (x.deadline) return x.deadline >= today;      // 開催日・締切が過ぎたもの → 外す
+        return x.date >= addDaysISO(today, -60);          // 日付が読めない古い記事（60日超） → 外す
+      });
+      items.filter((x) => !keep.includes(x)).forEach((x) => console.log(`\n  終了済みで除外: [${x.deadline || x.date}] ${x.title}`));
+      return keep;
+    }],
     ['myplEvents', 'まいぷれ酒田 イベント', () => getMypl(prev.myplEvents || [])],
   ];
 
