@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-11-22T21:39:18.311Z",
+  "updatedAt": "2026-11-23T00:57:05.373Z",
   "sources": {
     "cityNews": {
       "ok": true,
-      "at": "2026-11-22T21:39:18.311Z",
+      "at": "2026-11-23T00:57:05.373Z",
       "count": 40
     },
     "machiiroEvents": {
       "ok": true,
-      "at": "2026-11-22T21:39:18.311Z",
-      "count": 14
+      "at": "2026-11-23T00:57:05.373Z",
+      "count": 4
     },
     "myplEvents": {
       "ok": true,
-      "at": "2026-11-22T21:39:18.311Z",
+      "at": "2026-11-23T00:57:05.373Z",
       "count": 24
     }
   },
@@ -22,327 +22,311 @@
       "date": "2026-11-22",
       "title": "市長公務日程",
       "url": "https://www.city.sakata.lg.jp/shisei/shicyou/koumunittei07.html",
-      "category": "市政"
+      "category": "市政",
+      "deadline": null
     },
     {
       "date": "2026-11-20",
       "title": "「さかポス」にみなさんの声をお寄せください",
       "url": "https://www.city.sakata.lg.jp/shisei/shiminsankasuishin/sakata-liqlid.html",
-      "category": "市政"
+      "category": "市政",
+      "deadline": null
     },
     {
       "date": "2026-11-20",
       "title": "コンビニ交付サービスの一部再開について",
       "url": "https://www.city.sakata.lg.jp/kurashi/todokede/madoguchi/konbinisisutemu.html",
-      "category": "くらし"
+      "category": "くらし",
+      "deadline": null
     },
     {
       "date": "2026-11-19",
       "title": "陸羽西線に乗って酒田をお得に味わおうキャンペーンを実施します！",
       "url": "https://www.city.sakata.lg.jp/sangyo/kotsu/railway/restart-campaign.html",
-      "category": "産業・観光"
+      "category": "産業・観光",
+      "deadline": "2027-01-31"
     },
     {
       "date": "2026-11-19",
       "title": "食改さんのおすすめレシピ",
       "url": "https://www.city.sakata.lg.jp/kenko/kenko/eiyo_syokuseikatsu/kakusyuresipi.html",
-      "category": "健康・福祉"
+      "category": "健康・福祉",
+      "deadline": null
     },
     {
       "date": "2026-11-19",
       "title": "職場における働く女性の健康支援について",
       "url": "https://www.city.sakata.lg.jp/kurashi/danjyo/hatarakujyosei_kenko.html",
-      "category": "くらし"
+      "category": "くらし",
+      "deadline": null
     },
     {
       "date": "2026-11-19",
       "title": "入札・契約",
       "url": "https://www.city.sakata.lg.jp/shisei/nyusatsu/nyusatsukeiyaku.html",
-      "category": "市政"
+      "category": "市政",
+      "deadline": null
     },
     {
       "date": "2026-11-19",
       "title": "給食に関するおたよりを掲載します",
       "url": "https://www.city.sakata.lg.jp/kosodate/kyouiku/school/kyushoku-tayori.html",
-      "category": "子育て・教育"
+      "category": "子育て・教育",
+      "deadline": null
     },
     {
       "date": "2026-11-18",
       "title": "最高裁判決に伴う生活保護費追加給付の申出受付について",
       "url": "https://www.city.sakata.lg.jp/kenko/chiikifukushi/seikatsuyougo/tsuikakyuhu.html",
-      "category": "健康・福祉"
+      "category": "健康・福祉",
+      "deadline": "2027-03-31"
     },
     {
       "date": "2026-11-18",
       "title": "チェリアフェスティバル山形2026講演会のアーカイブ配信を行っています",
       "url": "https://www.city.sakata.lg.jp/kurashi/danjyo/cheria_festival.html",
-      "category": "くらし"
+      "category": "くらし",
+      "deadline": "2026-12-13"
     },
     {
       "date": "2026-11-17",
       "title": "【申込延長11月18日まで】「スポーツ能力測定会」参加者を募集しています！",
       "url": "https://www.city.sakata.lg.jp/bunka/sports/sportsevent/20221127sokuteikai.html",
-      "category": "文化・スポーツ"
+      "category": "文化・スポーツ",
+      "deadline": "2026-11-29"
     },
     {
       "date": "2026-11-17",
       "title": "強風による松くい虫被害木の倒木・落下にご注意ください",
       "url": "https://www.city.sakata.lg.jp/bousai/bousai/bousaijyoho/kikikanrimatsugare.html",
-      "category": "防災"
+      "category": "防災",
+      "deadline": null
     },
     {
       "date": "2026-11-17",
       "title": "「災害時返却カーリース自治体プラン」を活用した公用車を導入しました",
       "url": "https://www.city.sakata.lg.jp/shisei/shisetsu/somu02202611122142.html",
-      "category": "市政"
+      "category": "市政",
+      "deadline": null
     },
     {
       "date": "2026-11-17",
       "title": "酒田市プレスリリース",
       "url": "https://www.city.sakata.lg.jp/shisei/kouho/jyohohasshin/pressrelease.html",
-      "category": "市政"
+      "category": "市政",
+      "deadline": null
     },
     {
       "date": "2026-11-16",
       "title": "酒田市住宅リフォーム総合支援事業",
       "url": "https://www.city.sakata.lg.jp/jyutaku/jyutaku/jyutakushikin/reform.html",
-      "category": "住まい・環境"
+      "category": "住まい・環境",
+      "deadline": "2027-04-17"
     },
     {
       "date": "2026-11-16",
       "title": "離乳食教室参加者募集",
       "url": "https://www.city.sakata.lg.jp/kenko/kenko/kakusyukouza/rinyusyoku.html",
-      "category": "健康・福祉"
+      "category": "健康・福祉",
+      "deadline": null
     },
     {
       "date": "2026-11-16",
       "title": "子育てをする「パパ・ママ」のための小児・乳幼児の救急講習会を開催しました",
       "url": "https://www.city.sakata.lg.jp/bousai/syobokyukyu/syobooshirase/shobo0520190820.html",
-      "category": "防災"
+      "category": "防災",
+      "deadline": null
     },
     {
       "date": "2026-11-13",
       "title": "「くるみん」「ユースエール」市内認定企業が増えました！",
       "url": "https://www.city.sakata.lg.jp/sangyo/roudo/shoko02202611youth.html",
-      "category": "産業・観光"
+      "category": "産業・観光",
+      "deadline": null
     },
     {
       "date": "2026-11-13",
       "title": "消防ワンデイインターンシップを開催しました",
       "url": "https://www.city.sakata.lg.jp/bousai/syobokyukyu/syobooshirase/shobo0220261113.html",
-      "category": "防災"
+      "category": "防災",
+      "deadline": null
     },
     {
       "date": "2026-11-13",
       "title": "酒田市職員採用試験（7月募集分）最終試験合格者を発表",
       "url": "https://www.city.sakata.lg.jp/shisei/shisyokuin/saiyoushiken/jinjisaiyoguide2026.html",
-      "category": "市政"
+      "category": "市政",
+      "deadline": "2027-05-29"
     },
     {
       "date": "2026-11-12",
       "title": "令和8年度クマ目撃情報",
       "url": "https://www.city.sakata.lg.jp/kurashi/doubutsu/yasei/kankyo0320260415.html",
-      "category": "くらし"
-    },
-    {
-      "date": "2026-11-12",
-      "title": "酒田市リレーマラソン大会2026が開催されました",
-      "url": "https://www.city.sakata.lg.jp/bunka/sports/sportsevent/sports0220260909.html",
-      "category": "文化・スポーツ"
+      "category": "くらし",
+      "deadline": null
     },
     {
       "date": "2026-11-12",
       "title": "「SAKATA PR動画コンテスト in English 2026」上映審査会＆表彰式を開催します！",
       "url": "https://www.city.sakata.lg.jp/bunka/kokusaikouryukyokai/awardceremony2026.html",
-      "category": "文化・スポーツ"
+      "category": "文化・スポーツ",
+      "deadline": "2026-12-13"
     },
     {
       "date": "2026-11-11",
       "title": "【酒田勤労者福祉センター】メンテナンスのためシステム予約を一時停止します",
       "url": "https://www.city.sakata.lg.jp/shisei/shisetsu/kanrenshisetsu/kinrousyafukusi.html",
-      "category": "市政"
+      "category": "市政",
+      "deadline": "2027-01-03"
     },
     {
       "date": "2026-11-11",
       "title": "スポーツ推進委員会の活動を紹介します",
       "url": "https://www.city.sakata.lg.jp/bunka/sports/sportskatsudo/sports022020041.html",
-      "category": "文化・スポーツ"
+      "category": "文化・スポーツ",
+      "deadline": null
     },
     {
       "date": "2026-11-11",
       "title": "「オクトーバー・ラン＆ウォーク 2026」酒田市独自特典を贈呈します",
       "url": "https://www.city.sakata.lg.jp/bunka/sports/sportsevent/October_run_walk.html",
-      "category": "文化・スポーツ"
+      "category": "文化・スポーツ",
+      "deadline": "2026-12-11"
     },
     {
       "date": "2026-11-11",
       "title": "酒田市被災者生活支援・地域支え合いセンターからのお知らせ",
       "url": "https://www.city.sakata.lg.jp/kenko/chiikifukushi/fukushi/furusatokafe.html",
-      "category": "健康・福祉"
+      "category": "健康・福祉",
+      "deadline": "2026-12-02"
     },
     {
       "date": "2026-11-11",
       "title": "酒田市学校再編ビジョン（案）への意見公募（パブリックコメント）について",
       "url": "https://www.city.sakata.lg.jp/shisei/ikenkoubo/bosyuuchuu/gakko-vision-iken.html",
-      "category": "市政"
-    },
-    {
-      "date": "2026-11-10",
-      "title": "酒田市学校統合ビジョン懇話会",
-      "url": "https://www.city.sakata.lg.jp/kosodate/kyouiku/gakkotogo/gakko-vision.html",
-      "category": "子育て・教育"
+      "category": "市政",
+      "deadline": "2026-11-30"
     },
     {
       "date": "2026-11-10",
       "title": "鍼・灸・マッサージ等利用助成券事業",
       "url": "https://www.city.sakata.lg.jp/kenko/kourei/koureisyafukushi/kourei-kaigoyobou.html",
-      "category": "健康・福祉"
-    },
-    {
-      "date": "2026-11-09",
-      "title": "公園ニュース（光ケ丘公園の利用制限の解除について）",
-      "url": "https://www.city.sakata.lg.jp/jyutaku/kouenryokuchi/kouen/kouennews.html",
-      "category": "住まい・環境"
+      "category": "健康・福祉",
+      "deadline": null
     },
     {
       "date": "2026-11-09",
       "title": "11月12日から25日は「女性に対する暴力をなくす運動」期間です",
       "url": "https://www.city.sakata.lg.jp/kurashi/danjyo/kyosei20221111.html",
-      "category": "くらし"
+      "category": "くらし",
+      "deadline": "2026-11-30"
     },
     {
       "date": "2026-11-09",
       "title": "浸出水処理施設の維持管理に関するサウンディング型市場調査の実施について",
       "url": "https://www.city.sakata.lg.jp/shisei/kouekigyoseikumiai/koikisounding.html",
-      "category": "市政"
+      "category": "市政",
+      "deadline": null
     },
     {
       "date": "2026-11-06",
       "title": "アンコンシャス・バイアス啓発CM「日常にかくれた！なんでだろう？？」",
       "url": "https://www.city.sakata.lg.jp/kurashi/danjyo/yamagataken_uncon.html",
-      "category": "くらし"
+      "category": "くらし",
+      "deadline": null
     },
     {
       "date": "2026-11-06",
       "title": "【県内中小企業の皆さまへ】 賃金を引き上げた事業者を支援します！",
       "url": "https://www.city.sakata.lg.jp/sangyo/roudo/shoko20260218.html",
-      "category": "産業・観光"
+      "category": "産業・観光",
+      "deadline": "2027-01-29"
     },
     {
       "date": "2026-11-05",
       "title": "最近開催された酒田市景観審議会の結果",
       "url": "https://www.city.sakata.lg.jp/jyutaku/keikan/keikanshingikai/keikansinkekka.html",
-      "category": "住まい・環境"
+      "category": "住まい・環境",
+      "deadline": "2027-06-22"
     },
     {
       "date": "2026-11-05",
       "title": "令和8年度 酒田華いっぱいプロジェクト 四季の展示",
       "url": "https://www.city.sakata.lg.jp/sangyo/nogyo/shohi_hanrokakudai/sikinotennzi.html",
-      "category": "産業・観光"
+      "category": "産業・観光",
+      "deadline": null
     },
     {
       "date": "2026-11-05",
       "title": "【中町エリア未来会議シリーズ第1話】「まちなか妄想会議―中町エリアの未来を考えよう！ー」（開催報告）",
       "url": "https://www.city.sakata.lg.jp/shisei/shisakukeikaku/kikaku/sakata_ground_design/machinakamosokaigi.html",
-      "category": "市政"
+      "category": "市政",
+      "deadline": "2026-12-19"
     },
     {
       "date": "2026-11-04",
       "title": "2027年版やまがた県民手帳販売！！",
       "url": "https://www.city.sakata.lg.jp/shisei/toukei/toukeioshirase/2027yamagatakenmin.html",
-      "category": "市政"
+      "category": "市政",
+      "deadline": "2027-01-06"
     },
     {
       "date": "2026-11-02",
-      "title": "令和8年度やまがたトップセミナー",
-      "url": "https://www.city.sakata.lg.jp/kurashi/danjyo/yamagatatopseminar.html",
-      "category": "くらし"
+      "title": "さかた農林水産業お役立ち情報",
+      "url": "https://www.city.sakata.lg.jp/sangyo/nogyo/nosanbutsu/nosei_AFFinfo.html",
+      "category": "産業・観光",
+      "deadline": null
+    },
+    {
+      "date": "2026-11-02",
+      "title": "夜間納税相談窓口の開設について",
+      "url": "https://www.city.sakata.lg.jp/kurashi/zeikin/nouzei/yakannouzeisoudan.html",
+      "category": "くらし",
+      "deadline": null
+    },
+    {
+      "date": "2026-11-02",
+      "title": "酒田市広報最新号",
+      "url": "https://www.city.sakata.lg.jp/shisei/kouho/kouhosakata/kohosaishin.html",
+      "category": "市政",
+      "deadline": null
+    },
+    {
+      "date": "2026-11-02",
+      "title": "市議会だよりを発行しました",
+      "url": "https://www.city.sakata.lg.jp/shisei/shigikai/gikaijyouho/shigikaidayori.html",
+      "category": "市政",
+      "deadline": null
     }
   ],
   "machiiroEvents": [
     {
-      "date": "2026-11-13",
-      "title": "消防ワンデイインターンシップを開催しました",
-      "url": "https://www.city.sakata.lg.jp/bousai/syobokyukyu/syobooshirase/shobo0220261113.html",
-      "genre": "イベント"
-    },
-    {
-      "date": "2026-11-09",
-      "title": "公園ニュース（光ケ丘公園の利用制限の解除について）",
-      "url": "https://www.city.sakata.lg.jp/jyutaku/kouenryokuchi/kouen/kouennews.html",
-      "genre": "イベント"
-    },
-    {
-      "date": "2026-10-29",
-      "title": "2026城下町松山秋まつり",
-      "url": "https://www.city.sakata.lg.jp/sangyo/mtsuri/nenkanevent/november/11gatsu.html",
-      "genre": "イベント"
-    },
-    {
       "date": "2026-10-27",
       "title": "救命入門コースを開催します。（12月19日開催）",
       "url": "https://www.city.sakata.lg.jp/bousai/syobokyukyu/kousyukaisai/nyuumon1219.html",
-      "genre": "イベント"
+      "genre": "イベント",
+      "deadline": "2026-12-19"
     },
     {
       "date": "2026-10-23",
       "title": "東京藝大連携企画《酒田みらい見本市》を開催します！",
       "url": "https://www.city.sakata.lg.jp/bunka/geijyutsu/tenjievent/mihonichi.html",
-      "genre": "イベント"
+      "genre": "イベント",
+      "deadline": "2026-11-29"
     },
     {
       "date": "2026-10-23",
       "title": "休日結婚相談会を12月13日に開催します",
       "url": "https://www.city.sakata.lg.jp/kurashi/kekkon/soudankai.html",
-      "genre": "イベント"
+      "genre": "イベント",
+      "deadline": "2026-12-13"
     },
     {
       "date": "2026-10-20",
       "title": "第59回ひらた文化祭のご案内",
       "url": "https://www.city.sakata.lg.jp/bunka/geijyutsu/tenjievent/hirata_bunkasai.html",
-      "genre": "イベント"
-    },
-    {
-      "date": "2026-10-13",
-      "title": "花育授業を開催しました",
-      "url": "https://www.city.sakata.lg.jp/sangyo/nogyo/shohi_hanrokakudai/hanaikujyugyou.html",
-      "genre": "イベント"
-    },
-    {
-      "date": "2016-09-29",
-      "title": "第2回酒田コミュニケーションポート（仮称）整備ワークショップ開催について",
-      "url": "http://www.city.sakata.lg.jp/ou/kikaku/toshidesign/toshidesign/pd0923144109.html",
-      "genre": "イベント"
-    },
-    {
-      "date": "2016-09-29",
-      "title": "～百年の森づくり～ 第15回田沢川ダムまつり",
-      "url": "http://www.city.sakata.lg.jp/ou/hirata/kensetsu/kensetsu/tazawagawadamumatsuri.html",
-      "genre": "イベント"
-    },
-    {
-      "date": "2016-09-28",
-      "title": "赤い羽根共同募金街頭募金を開催します",
-      "url": "http://www.city.sakata.lg.jp/ou/kenko/fukushi/chiiki/pd0928085238.html",
-      "genre": "イベント"
-    },
-    {
-      "date": "2016-09-27",
-      "title": "第1回酒田コミュニケーションポート（仮称）整備ワークショップが開催されました",
-      "url": "http://www.city.sakata.lg.jp/ou/kikaku/toshidesign/toshidesign/pd0804200534.html",
-      "genre": "イベント"
-    },
-    {
-      "date": "2016-09-15",
-      "title": "酒田希望音楽祭2016 街かどコンサート",
-      "url": "http://www.city.sakata.lg.jp/ou/kyoiku/shakaikyoiku/geijyutu/machikado-concert.html",
-      "genre": "イベント"
-    },
-    {
-      "date": "2016-09-14",
-      "title": "さかた産業フェア2016 開催！",
-      "url": "http://www.city.sakata.lg.jp/ou/shoko/kowan/kigyo/sangyofair_2012_kokuchi.html",
-      "genre": "イベント"
+      "genre": "イベント",
+      "deadline": "2026-11-29"
     }
   ],
   "myplEvents": [
