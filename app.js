@@ -44,20 +44,20 @@
 
     $('#aboutDl').innerHTML = (C.profile || []).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
 
-    // 略歴・現在・座右の銘
+    // 現在・座右の銘・略歴（この順に表示）
     const line = (l) => Array.isArray(l)
       ? `<li><span>${esc(l[0])}</span><em>${esc(l[1])}</em></li>`
       : `<li><span>${esc(l)}</span></li>`;
     const more = [];
-    if ((C.career || []).length) {
-      more.push(`<section class="pf"><h3 class="pf__h">略歴</h3>${C.career.map((g) =>
-        `<div class="pf__group"><p class="pf__head">${esc(g.head)}</p>${(g.lines || []).length ? `<ul class="pf__list">${g.lines.map(line).join('')}</ul>` : ''}</div>`).join('')}</section>`);
-    }
     if ((C.current || []).length) {
       more.push(`<section class="pf pf--now"><h3 class="pf__h">現在</h3><ul class="pf__list">${C.current.map(line).join('')}</ul></section>`);
     }
     if (C.motto && C.motto.text) {
       more.push(`<section class="pf motto"><h3 class="motto__h">座右の銘</h3><p class="motto__text">「${esc(C.motto.text)}」</p>${C.motto.sub ? `<p class="motto__sub">${esc(C.motto.sub)}</p>` : ''}</section>`);
+    }
+    if ((C.career || []).length) {
+      more.push(`<section class="pf"><h3 class="pf__h">略歴</h3>${C.career.map((g) =>
+        `<div class="pf__group"><p class="pf__head">${esc(g.head)}</p>${(g.lines || []).length ? `<ul class="pf__list">${g.lines.map(line).join('')}</ul>` : ''}</div>`).join('')}</section>`);
     }
     $('#aboutMore').innerHTML = more.join('');
 
