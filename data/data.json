@@ -1,23 +1,30 @@
 {
-  "updatedAt": "2026-11-23T21:49:53.931Z",
+  "updatedAt": "2026-11-24T03:46:39.531Z",
   "sources": {
     "cityNews": {
       "ok": true,
-      "at": "2026-11-23T21:49:53.931Z",
+      "at": "2026-11-24T03:46:39.531Z",
       "count": 40
     },
     "machiiroEvents": {
       "ok": true,
-      "at": "2026-11-23T21:49:53.931Z",
+      "at": "2026-11-24T03:46:39.531Z",
       "count": 4
     },
     "myplEvents": {
       "ok": true,
-      "at": "2026-11-23T21:49:53.931Z",
-      "count": 23
+      "at": "2026-11-24T03:46:39.531Z",
+      "count": 24
     }
   },
   "cityNews": [
+    {
+      "date": "2026-11-24",
+      "title": "東北公益文科大学新着情報（課題挑戦型インターンシップについて）",
+      "url": "https://www.city.sakata.lg.jp/kosodate/kouekibunka/koekidaikanrenjoho/koekiUV.html",
+      "category": "子育て・教育",
+      "deadline": null
+    },
     {
       "date": "2026-11-22",
       "title": "市長公務日程",
@@ -31,6 +38,13 @@
       "url": "https://www.city.sakata.lg.jp/shisei/shiminsankasuishin/sakata-liqlid.html",
       "category": "市政",
       "deadline": null
+    },
+    {
+      "date": "2026-11-20",
+      "title": "松山の宝 茶話会",
+      "url": "https://www.city.sakata.lg.jp/sangyo/mtsuri/bosyuu/matsuyama_sawakai.html",
+      "category": "産業・観光",
+      "deadline": "2026-12-19"
     },
     {
       "date": "2026-11-20",
@@ -282,20 +296,6 @@
       "title": "夜間納税相談窓口の開設について",
       "url": "https://www.city.sakata.lg.jp/kurashi/zeikin/nouzei/yakannouzeisoudan.html",
       "category": "くらし",
-      "deadline": null
-    },
-    {
-      "date": "2026-11-02",
-      "title": "酒田市広報最新号",
-      "url": "https://www.city.sakata.lg.jp/shisei/kouho/kouhosakata/kohosaishin.html",
-      "category": "市政",
-      "deadline": null
-    },
-    {
-      "date": "2026-11-02",
-      "title": "市議会だよりを発行しました",
-      "url": "https://www.city.sakata.lg.jp/shisei/shigikai/gikaijyouho/shigikaidayori.html",
-      "category": "市政",
       "deadline": null
     }
   ],
@@ -605,6 +605,14 @@
       "price": "無料",
       "periodEnd": "2026-12-19",
       "periodStart": "2026-12-19"
+    },
+    {
+      "title": "クリスマスイベント",
+      "url": "https://sakata.mypl.net/shop/00000377584/news?d=2911350",
+      "category": "お店のイベント",
+      "shop": "Lachouette.TAMAHIME",
+      "start": "2026-12-20",
+      "end": "2026-12-20"
     }
   ]
 }
