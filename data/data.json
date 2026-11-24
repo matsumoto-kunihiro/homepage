@@ -1,23 +1,30 @@
 {
-  "updatedAt": "2026-11-24T03:46:39.531Z",
+  "updatedAt": "2026-11-24T10:02:04.867Z",
   "sources": {
     "cityNews": {
       "ok": true,
-      "at": "2026-11-24T03:46:39.531Z",
+      "at": "2026-11-24T10:02:04.867Z",
       "count": 40
     },
     "machiiroEvents": {
       "ok": true,
-      "at": "2026-11-24T03:46:39.531Z",
+      "at": "2026-11-24T10:02:04.867Z",
       "count": 4
     },
     "myplEvents": {
       "ok": true,
-      "at": "2026-11-24T03:46:39.531Z",
-      "count": 24
+      "at": "2026-11-24T10:02:04.867Z",
+      "count": 25
     }
   },
   "cityNews": [
+    {
+      "date": "2026-11-24",
+      "title": "入札・契約",
+      "url": "https://www.city.sakata.lg.jp/shisei/nyusatsu/nyusatsukeiyaku.html",
+      "category": "市政",
+      "deadline": null
+    },
     {
       "date": "2026-11-24",
       "title": "東北公益文科大学新着情報（課題挑戦型インターンシップについて）",
@@ -30,6 +37,13 @@
       "title": "市長公務日程",
       "url": "https://www.city.sakata.lg.jp/shisei/shicyou/koumunittei07.html",
       "category": "市政",
+      "deadline": null
+    },
+    {
+      "date": "2026-11-22",
+      "title": "給食に使用する食品の産地公表について",
+      "url": "https://www.city.sakata.lg.jp/kosodate/kyouiku/school/kyushoku-sanchi.html",
+      "category": "子育て・教育",
       "deadline": null
     },
     {
@@ -72,13 +86,6 @@
       "title": "職場における働く女性の健康支援について",
       "url": "https://www.city.sakata.lg.jp/kurashi/danjyo/hatarakujyosei_kenko.html",
       "category": "くらし",
-      "deadline": null
-    },
-    {
-      "date": "2026-11-19",
-      "title": "入札・契約",
-      "url": "https://www.city.sakata.lg.jp/shisei/nyusatsu/nyusatsukeiyaku.html",
-      "category": "市政",
       "deadline": null
     },
     {
@@ -289,13 +296,6 @@
       "title": "さかた農林水産業お役立ち情報",
       "url": "https://www.city.sakata.lg.jp/sangyo/nogyo/nosanbutsu/nosei_AFFinfo.html",
       "category": "産業・観光",
-      "deadline": null
-    },
-    {
-      "date": "2026-11-02",
-      "title": "夜間納税相談窓口の開設について",
-      "url": "https://www.city.sakata.lg.jp/kurashi/zeikin/nouzei/yakannouzeisoudan.html",
-      "category": "くらし",
       "deadline": null
     }
   ],
@@ -602,6 +602,19 @@
       "end": "2026-12-19",
       "dateText": "2026年12月19日(土) 13：00～14：30",
       "place": "酒田産業会館",
+      "price": "無料",
+      "periodEnd": "2026-12-19",
+      "periodStart": "2026-12-19"
+    },
+    {
+      "title": "やまがたのNPOを“次の段階”へ～子ども・若者の居場所づくりの実践から展望する～",
+      "url": "https://sakata.mypl.net/event/00000481245/",
+      "category": "講演、シンポジウム",
+      "shop": "",
+      "start": "2026-12-19",
+      "end": "2026-12-19",
+      "dateText": "2026年12月19日(土) 13:00～14:30",
+      "place": "酒田市公益研修センター",
       "price": "無料",
       "periodEnd": "2026-12-19",
       "periodStart": "2026-12-19"
