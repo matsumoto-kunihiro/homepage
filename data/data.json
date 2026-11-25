@@ -1,23 +1,44 @@
 {
-  "updatedAt": "2026-11-24T21:54:49.697Z",
+  "updatedAt": "2026-11-25T03:51:12.903Z",
   "sources": {
     "cityNews": {
       "ok": true,
-      "at": "2026-11-24T21:54:49.697Z",
+      "at": "2026-11-25T03:51:12.903Z",
       "count": 40
     },
     "machiiroEvents": {
       "ok": true,
-      "at": "2026-11-24T21:54:49.697Z",
+      "at": "2026-11-25T03:51:12.903Z",
       "count": 4
     },
     "myplEvents": {
       "ok": true,
-      "at": "2026-11-24T21:54:49.697Z",
+      "at": "2026-11-25T03:51:12.903Z",
       "count": 25
     }
   },
   "cityNews": [
+    {
+      "date": "2026-11-25",
+      "title": "コンビニ交付サービスの休止について",
+      "url": "https://www.city.sakata.lg.jp/kurashi/todokede/madoguchi/konbinisisutemu.html",
+      "category": "くらし",
+      "deadline": null
+    },
+    {
+      "date": "2026-11-25",
+      "title": "酒田市の農林水産業（統計）",
+      "url": "https://www.city.sakata.lg.jp/sangyo/nogyo/nosanbutsu/nourintokei.html",
+      "category": "産業・観光",
+      "deadline": null
+    },
+    {
+      "date": "2026-11-25",
+      "title": "酒田市プレスリリース",
+      "url": "https://www.city.sakata.lg.jp/shisei/kouho/jyohohasshin/pressrelease.html",
+      "category": "市政",
+      "deadline": null
+    },
     {
       "date": "2026-11-24",
       "title": "入札・契約",
@@ -59,13 +80,6 @@
       "url": "https://www.city.sakata.lg.jp/sangyo/mtsuri/bosyuu/matsuyama_sawakai.html",
       "category": "産業・観光",
       "deadline": "2026-12-19"
-    },
-    {
-      "date": "2026-11-20",
-      "title": "コンビニ交付サービスの一部再開について",
-      "url": "https://www.city.sakata.lg.jp/kurashi/todokede/madoguchi/konbinisisutemu.html",
-      "category": "くらし",
-      "deadline": null
     },
     {
       "date": "2026-11-19",
@@ -127,13 +141,6 @@
       "date": "2026-11-17",
       "title": "「災害時返却カーリース自治体プラン」を活用した公用車を導入しました",
       "url": "https://www.city.sakata.lg.jp/shisei/shisetsu/somu02202611122142.html",
-      "category": "市政",
-      "deadline": null
-    },
-    {
-      "date": "2026-11-17",
-      "title": "酒田市プレスリリース",
-      "url": "https://www.city.sakata.lg.jp/shisei/kouho/jyohohasshin/pressrelease.html",
       "category": "市政",
       "deadline": null
     },
@@ -290,13 +297,6 @@
       "url": "https://www.city.sakata.lg.jp/shisei/toukei/toukeioshirase/2027yamagatakenmin.html",
       "category": "市政",
       "deadline": "2027-01-06"
-    },
-    {
-      "date": "2026-11-02",
-      "title": "さかた農林水産業お役立ち情報",
-      "url": "https://www.city.sakata.lg.jp/sangyo/nogyo/nosanbutsu/nosei_AFFinfo.html",
-      "category": "産業・観光",
-      "deadline": null
     }
   ],
   "machiiroEvents": [
