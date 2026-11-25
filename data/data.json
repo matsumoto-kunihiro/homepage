@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-11-25T03:51:12.903Z",
+  "updatedAt": "2026-11-25T10:05:08.635Z",
   "sources": {
     "cityNews": {
       "ok": true,
-      "at": "2026-11-25T03:51:12.903Z",
+      "at": "2026-11-25T10:05:08.635Z",
       "count": 40
     },
     "machiiroEvents": {
       "ok": true,
-      "at": "2026-11-25T03:51:12.903Z",
+      "at": "2026-11-25T10:05:08.635Z",
       "count": 4
     },
     "myplEvents": {
       "ok": true,
-      "at": "2026-11-25T03:51:12.903Z",
+      "at": "2026-11-25T10:05:08.635Z",
       "count": 25
     }
   },
@@ -22,6 +22,13 @@
       "date": "2026-11-25",
       "title": "コンビニ交付サービスの休止について",
       "url": "https://www.city.sakata.lg.jp/kurashi/todokede/madoguchi/konbinisisutemu.html",
+      "category": "くらし",
+      "deadline": null
+    },
+    {
+      "date": "2026-11-25",
+      "title": "冬期間における踏切事故にご注意ください",
+      "url": "https://www.city.sakata.lg.jp/kurashi/koutsuanzen/kotsuanzen/humikiriziko.html",
       "category": "くらし",
       "deadline": null
     },
@@ -38,6 +45,13 @@
       "url": "https://www.city.sakata.lg.jp/shisei/kouho/jyohohasshin/pressrelease.html",
       "category": "市政",
       "deadline": null
+    },
+    {
+      "date": "2026-11-24",
+      "title": "小・中学校における感染症による臨時休業等の状況について",
+      "url": "https://www.city.sakata.lg.jp/kosodate/kyouiku/school/gakko0320251118.html",
+      "category": "子育て・教育",
+      "deadline": "2026-11-26"
     },
     {
       "date": "2026-11-24",
@@ -244,13 +258,6 @@
     },
     {
       "date": "2026-11-09",
-      "title": "11月12日から25日は「女性に対する暴力をなくす運動」期間です",
-      "url": "https://www.city.sakata.lg.jp/kurashi/danjyo/kyosei20221111.html",
-      "category": "くらし",
-      "deadline": "2026-11-30"
-    },
-    {
-      "date": "2026-11-09",
       "title": "浸出水処理施設の維持管理に関するサウンディング型市場調査の実施について",
       "url": "https://www.city.sakata.lg.jp/shisei/kouekigyoseikumiai/koikisounding.html",
       "category": "市政",
@@ -290,13 +297,6 @@
       "url": "https://www.city.sakata.lg.jp/shisei/shisakukeikaku/kikaku/sakata_ground_design/machinakamosokaigi.html",
       "category": "市政",
       "deadline": "2026-12-19"
-    },
-    {
-      "date": "2026-11-04",
-      "title": "2027年版やまがた県民手帳販売！！",
-      "url": "https://www.city.sakata.lg.jp/shisei/toukei/toukeioshirase/2027yamagatakenmin.html",
-      "category": "市政",
-      "deadline": "2027-01-06"
     }
   ],
   "machiiroEvents": [
