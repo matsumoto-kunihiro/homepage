@@ -1,29 +1,29 @@
 {
-  "updatedAt": "2026-11-25T21:54:28.024Z",
+  "updatedAt": "2026-11-26T03:48:04.028Z",
   "sources": {
     "cityNews": {
       "ok": true,
-      "at": "2026-11-25T21:54:28.024Z",
+      "at": "2026-11-26T03:48:04.028Z",
       "count": 40
     },
     "machiiroEvents": {
       "ok": true,
-      "at": "2026-11-25T21:54:28.024Z",
+      "at": "2026-11-26T03:48:04.028Z",
       "count": 4
     },
     "myplEvents": {
-      "ok": true,
+      "ok": false,
       "at": "2026-11-25T21:54:28.024Z",
-      "count": 23
+      "error": "https://sakata.mypl.net/event/: HTTP 403"
     }
   },
   "cityNews": [
     {
       "date": "2026-11-25",
-      "title": "コンビニ交付サービスの休止について",
-      "url": "https://www.city.sakata.lg.jp/kurashi/todokede/madoguchi/konbinisisutemu.html",
-      "category": "くらし",
-      "deadline": null
+      "title": "12月3日から9日は障がい者週間・ 12月は山形県障がい者差別解消強化月間です",
+      "url": "https://www.city.sakata.lg.jp/kenko/syogaifukushi/fukushi03202611.html",
+      "category": "健康・福祉",
+      "deadline": "2026-12-16"
     },
     {
       "date": "2026-11-25",
@@ -62,10 +62,24 @@
     },
     {
       "date": "2026-11-24",
+      "title": "避難所におけるペット同行避難に関するガイドライン",
+      "url": "https://www.city.sakata.lg.jp/bousai/bousai/hinanjyo/pet_guideline.html",
+      "category": "防災",
+      "deadline": null
+    },
+    {
+      "date": "2026-11-24",
       "title": "東北公益文科大学新着情報（課題挑戦型インターンシップについて）",
       "url": "https://www.city.sakata.lg.jp/kosodate/kouekibunka/koekidaikanrenjoho/koekiUV.html",
       "category": "子育て・教育",
       "deadline": null
+    },
+    {
+      "date": "2026-11-24",
+      "title": "ウェルカム・松山・イルミネーション",
+      "url": "https://www.city.sakata.lg.jp/sangyo/mtsuri/matsu_illumination.html",
+      "category": "産業・観光",
+      "deadline": "2026-12-19"
     },
     {
       "date": "2026-11-22",
@@ -283,20 +297,6 @@
       "url": "https://www.city.sakata.lg.jp/jyutaku/keikan/keikanshingikai/keikansinkekka.html",
       "category": "住まい・環境",
       "deadline": "2027-06-22"
-    },
-    {
-      "date": "2026-11-05",
-      "title": "令和8年度 酒田華いっぱいプロジェクト 四季の展示",
-      "url": "https://www.city.sakata.lg.jp/sangyo/nogyo/shohi_hanrokakudai/sikinotennzi.html",
-      "category": "産業・観光",
-      "deadline": null
-    },
-    {
-      "date": "2026-11-05",
-      "title": "【中町エリア未来会議シリーズ第1話】「まちなか妄想会議―中町エリアの未来を考えよう！ー」（開催報告）",
-      "url": "https://www.city.sakata.lg.jp/shisei/shisakukeikaku/kikaku/sakata_ground_design/machinakamosokaigi.html",
-      "category": "市政",
-      "deadline": "2026-12-19"
     }
   ],
   "machiiroEvents": [
