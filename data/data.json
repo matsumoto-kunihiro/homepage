@@ -1,23 +1,37 @@
 {
-  "updatedAt": "2026-11-26T10:03:43.005Z",
+  "updatedAt": "2026-11-26T21:51:27.730Z",
   "sources": {
     "cityNews": {
       "ok": true,
-      "at": "2026-11-26T10:03:43.005Z",
+      "at": "2026-11-26T21:51:27.730Z",
       "count": 40
     },
     "machiiroEvents": {
       "ok": true,
-      "at": "2026-11-26T10:03:43.005Z",
+      "at": "2026-11-26T21:51:27.730Z",
       "count": 4
     },
     "myplEvents": {
       "ok": true,
-      "at": "2026-11-26T10:03:43.005Z",
+      "at": "2026-11-26T21:51:27.730Z",
       "count": 23
     }
   },
   "cityNews": [
+    {
+      "date": "2026-11-27",
+      "title": "応急手当『救命入門コース』を開催します。（1月19日開催）",
+      "url": "https://www.city.sakata.lg.jp/bousai/syobokyukyu/kousyukaisai/nyuumon0119.html",
+      "category": "防災",
+      "deadline": "2027-01-19"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "マイナンバーカードの平日延長・休日窓口（完全予約制）",
+      "url": "https://www.city.sakata.lg.jp/kurashi/mynocard/mainacakyujitu.html",
+      "category": "くらし",
+      "deadline": null
+    },
     {
       "date": "2026-11-26",
       "title": "酒田地区広域行政組合消防職員採用試験合格者",
@@ -59,13 +73,6 @@
       "url": "https://www.city.sakata.lg.jp/shisei/kouho/jyohohasshin/pressrelease.html",
       "category": "市政",
       "deadline": null
-    },
-    {
-      "date": "2026-11-24",
-      "title": "小・中学校における感染症による臨時休業等の状況について",
-      "url": "https://www.city.sakata.lg.jp/kosodate/kyouiku/school/gakko0320251118.html",
-      "category": "子育て・教育",
-      "deadline": "2026-11-26"
     },
     {
       "date": "2026-11-24",
@@ -290,13 +297,6 @@
       "url": "https://www.city.sakata.lg.jp/shisei/kouekigyoseikumiai/koikisounding.html",
       "category": "市政",
       "deadline": null
-    },
-    {
-      "date": "2026-11-06",
-      "title": "アンコンシャス・バイアス啓発CM「日常にかくれた！なんでだろう？？」",
-      "url": "https://www.city.sakata.lg.jp/kurashi/danjyo/yamagataken_uncon.html",
-      "category": "くらし",
-      "deadline": null
     }
   ],
   "machiiroEvents": [
@@ -335,7 +335,7 @@
       "url": "https://sakata.mypl.net/event/00000480092/",
       "category": "スクール、体験",
       "shop": "",
-      "start": "2026-11-26",
+      "start": "2026-11-27",
       "end": "2026-11-29",
       "dateText": "2026年11月21日(土) ～ 11月29日(日) 10：00～17：00",
       "place": "旧加藤邸",
@@ -348,26 +348,13 @@
       "url": "https://sakata.mypl.net/event/00000479154/",
       "category": "展覧会",
       "shop": "",
-      "start": "2026-11-26",
+      "start": "2026-11-27",
       "end": "2026-12-14",
       "dateText": "2026年10月31日(土) ～ 12月14日(月) 休館日 11月無休、12月毎週火曜・水曜休館 開館時間 9：00～16：30(最終入館16：00) ※ナイトミュージアム開…",
       "place": "本間美術館",
       "price": "大人1,300円、学生600円、中学生以下無料",
       "periodStart": "2026-10-31",
       "periodEnd": "2026-12-14"
-    },
-    {
-      "title": "企画展「酒田市大火から50年―1976.10.29 忘れない 猛火の記憶と復興までの歩みー」",
-      "url": "https://sakata.mypl.net/event/00000478119/",
-      "category": "展覧会",
-      "shop": "",
-      "start": "2026-11-26",
-      "end": "2026-12-25",
-      "dateText": "2026年10月3日(土) ～ 2027年2月14日(日) 月曜休館（祝日の場合は翌日） 9：00～16：30（最終入館16：00）",
-      "place": "酒田市文化資料館光丘文庫",
-      "price": "無料",
-      "periodStart": "2026-10-03",
-      "periodEnd": "2027-02-14"
     },
     {
       "title": "心と体を整える リラックス ヨガクラス",
@@ -379,6 +366,19 @@
       "dateText": "2026年8月28日(金), 9月25日(金), 10月30日(金), 11月27日(金), 12月25日(金) 10：00～11：00",
       "place": "酒田市松山城址館",
       "price": "1,000円"
+    },
+    {
+      "title": "企画展「酒田市大火から50年―1976.10.29 忘れない 猛火の記憶と復興までの歩みー」",
+      "url": "https://sakata.mypl.net/event/00000478119/",
+      "category": "展覧会",
+      "shop": "",
+      "start": "2026-11-27",
+      "end": "2026-12-26",
+      "dateText": "2026年10月3日(土) ～ 2027年2月14日(日) 月曜休館（祝日の場合は翌日） 9：00～16：30（最終入館16：00）",
+      "place": "酒田市文化資料館光丘文庫",
+      "price": "無料",
+      "periodStart": "2026-10-03",
+      "periodEnd": "2027-02-14"
     },
     {
       "title": "おはなしわーるど",
