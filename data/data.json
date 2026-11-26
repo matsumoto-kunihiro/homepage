@@ -1,23 +1,37 @@
 {
-  "updatedAt": "2026-11-26T03:48:04.028Z",
+  "updatedAt": "2026-11-26T10:03:43.005Z",
   "sources": {
     "cityNews": {
       "ok": true,
-      "at": "2026-11-26T03:48:04.028Z",
+      "at": "2026-11-26T10:03:43.005Z",
       "count": 40
     },
     "machiiroEvents": {
       "ok": true,
-      "at": "2026-11-26T03:48:04.028Z",
+      "at": "2026-11-26T10:03:43.005Z",
       "count": 4
     },
     "myplEvents": {
-      "ok": false,
-      "at": "2026-11-25T21:54:28.024Z",
-      "error": "https://sakata.mypl.net/event/: HTTP 403"
+      "ok": true,
+      "at": "2026-11-26T10:03:43.005Z",
+      "count": 23
     }
   },
   "cityNews": [
+    {
+      "date": "2026-11-26",
+      "title": "酒田地区広域行政組合消防職員採用試験合格者",
+      "url": "https://www.city.sakata.lg.jp/bousai/syobokyukyu/syobooshirase/saiyou.html",
+      "category": "防災",
+      "deadline": null
+    },
+    {
+      "date": "2026-11-26",
+      "title": "【次回開催日：12月10日（木曜）】つぶやきBARを開催します",
+      "url": "https://www.city.sakata.lg.jp/shisei/fukushicyou/tubuyakibar2023.html",
+      "category": "市政",
+      "deadline": "2026-12-10"
+    },
     {
       "date": "2026-11-25",
       "title": "12月3日から9日は障がい者週間・ 12月は山形県障がい者差別解消強化月間です",
@@ -283,20 +297,6 @@
       "url": "https://www.city.sakata.lg.jp/kurashi/danjyo/yamagataken_uncon.html",
       "category": "くらし",
       "deadline": null
-    },
-    {
-      "date": "2026-11-06",
-      "title": "【県内中小企業の皆さまへ】 賃金を引き上げた事業者を支援します！",
-      "url": "https://www.city.sakata.lg.jp/sangyo/roudo/shoko20260218.html",
-      "category": "産業・観光",
-      "deadline": "2027-01-29"
-    },
-    {
-      "date": "2026-11-05",
-      "title": "最近開催された酒田市景観審議会の結果",
-      "url": "https://www.city.sakata.lg.jp/jyutaku/keikan/keikanshingikai/keikansinkekka.html",
-      "category": "住まい・環境",
-      "deadline": "2027-06-22"
     }
   ],
   "machiiroEvents": [
