@@ -1,23 +1,37 @@
 {
-  "updatedAt": "2026-11-27T03:49:23.542Z",
+  "updatedAt": "2026-11-27T10:00:25.056Z",
   "sources": {
     "cityNews": {
       "ok": true,
-      "at": "2026-11-27T03:49:23.542Z",
+      "at": "2026-11-27T10:00:25.056Z",
       "count": 40
     },
     "machiiroEvents": {
       "ok": true,
-      "at": "2026-11-27T03:49:23.542Z",
-      "count": 6
+      "at": "2026-11-27T10:00:25.056Z",
+      "count": 7
     },
     "myplEvents": {
       "ok": true,
-      "at": "2026-11-27T03:49:23.542Z",
+      "at": "2026-11-27T10:00:25.056Z",
       "count": 24
     }
   },
   "cityNews": [
+    {
+      "date": "2026-11-27",
+      "title": "平田総合支所広報紙「タウンNEWSひらた」",
+      "url": "https://www.city.sakata.lg.jp/shisei/kouho/townnewshirata.html",
+      "category": "市政",
+      "deadline": null
+    },
+    {
+      "date": "2026-11-27",
+      "title": "令和6年7月大雨災害における酒田市災害対策本部の対応に関する検証結果の公表",
+      "url": "https://www.city.sakata.lg.jp/bousai/R60725ooame/kennsyou.html",
+      "category": "防災",
+      "deadline": null
+    },
     {
       "date": "2026-11-27",
       "title": "荘内銀行の名称変更に伴う市税等の口座振替や納付について",
@@ -283,20 +297,6 @@
       "url": "https://www.city.sakata.lg.jp/bunka/kokusaikouryukyokai/awardceremony2026.html",
       "category": "文化・スポーツ",
       "deadline": "2026-12-13"
-    },
-    {
-      "date": "2026-11-11",
-      "title": "【酒田勤労者福祉センター】メンテナンスのためシステム予約を一時停止します",
-      "url": "https://www.city.sakata.lg.jp/shisei/shisetsu/kanrenshisetsu/kinrousyafukusi.html",
-      "category": "市政",
-      "deadline": "2027-01-03"
-    },
-    {
-      "date": "2026-11-11",
-      "title": "スポーツ推進委員会の活動を紹介します",
-      "url": "https://www.city.sakata.lg.jp/bunka/sports/sportskatsudo/sports022020041.html",
-      "category": "文化・スポーツ",
-      "deadline": null
     }
   ],
   "machiiroEvents": [
@@ -306,6 +306,13 @@
       "url": "https://www.city.sakata.lg.jp/bousai/syobokyukyu/kousyukaisai/nyuumon0119.html",
       "genre": "イベント",
       "deadline": "2027-01-19"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "はっぴいバザー開催のお知らせ",
+      "url": "https://www.city.sakata.lg.jp/kenko/syogaifukushi/baza-kaisai.html",
+      "genre": "イベント",
+      "deadline": "2027-03-19"
     },
     {
       "date": "2026-11-26",
