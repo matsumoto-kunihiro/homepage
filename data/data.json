@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-11-28T09:48:05.544Z",
+  "updatedAt": "2026-11-28T21:42:37.132Z",
   "sources": {
     "cityNews": {
       "ok": true,
-      "at": "2026-11-28T09:48:05.544Z",
+      "at": "2026-11-28T21:42:37.132Z",
       "count": 40
     },
     "machiiroEvents": {
       "ok": true,
-      "at": "2026-11-28T09:48:05.544Z",
+      "at": "2026-11-28T21:42:37.132Z",
       "count": 7
     },
     "myplEvents": {
       "ok": true,
-      "at": "2026-11-28T09:48:05.544Z",
-      "count": 24
+      "at": "2026-11-28T21:42:37.132Z",
+      "count": 21
     }
   },
   "cityNews": [
@@ -352,100 +352,6 @@
   ],
   "myplEvents": [
     {
-      "title": "おはなしわーるど",
-      "url": "https://sakata.mypl.net/event/00000480177/",
-      "category": "子育てイベント",
-      "shop": "",
-      "start": "2026-11-28",
-      "end": "2026-11-28",
-      "dateText": "2026年11月28日(土) 10：30～",
-      "place": "遊佐町立図書館",
-      "price": "",
-      "periodEnd": "2026-11-28",
-      "periodStart": "2026-11-28"
-    },
-    {
-      "title": "光の湊・酒田三曲協会 イブニングコンサート",
-      "url": "https://sakata.mypl.net/event/00000480324/",
-      "category": "音楽イベント、コンサート、ライブ",
-      "shop": "",
-      "start": "2026-11-28",
-      "end": "2026-11-28",
-      "dateText": "2026年11月28日(土) 17：30～18：00",
-      "place": "酒田駅前交流拠点施設ミライニ",
-      "price": "無料",
-      "periodEnd": "2026-11-28",
-      "periodStart": "2026-11-28"
-    },
-    {
-      "title": "もしぇっとマルシェ3周年祭",
-      "url": "https://sakata.mypl.net/event/00000480514/",
-      "category": "市、フリーマーケット",
-      "shop": "",
-      "start": "2026-11-28",
-      "end": "2026-11-28",
-      "dateText": "2026年11月28日(土) 10：00～16：00",
-      "place": "余目第三まちづくりセンター",
-      "price": "入場無料",
-      "periodEnd": "2026-11-28",
-      "periodStart": "2026-11-28"
-    },
-    {
-      "title": "まちの「やってみたい」が集まる「酒田みらい見本市」",
-      "url": "https://sakata.mypl.net/event/00000480092/",
-      "category": "スクール、体験",
-      "shop": "",
-      "start": "2026-11-28",
-      "end": "2026-11-29",
-      "dateText": "2026年11月21日(土) ～ 11月29日(日) 10：00～17：00",
-      "place": "旧加藤邸",
-      "price": "入場無料",
-      "periodStart": "2026-11-21",
-      "periodEnd": "2026-11-29"
-    },
-    {
-      "title": "フリー撮影会",
-      "url": "https://sakata.mypl.net/shop/00000377584/news?d=3128142",
-      "category": "お店のイベント",
-      "shop": "Lachouette.TAMAHIME",
-      "start": "2026-11-28",
-      "end": "2026-11-29"
-    },
-    {
-      "title": "ポイント10倍デー",
-      "url": "https://sakata.mypl.net/shop/00000356158/news?d=3464641",
-      "category": "お店のイベント",
-      "shop": "和豚もちぶた 直売所",
-      "start": "2026-11-28",
-      "end": "2026-11-29"
-    },
-    {
-      "title": "本間家の浮世絵",
-      "url": "https://sakata.mypl.net/event/00000479154/",
-      "category": "展覧会",
-      "shop": "",
-      "start": "2026-11-28",
-      "end": "2026-12-14",
-      "dateText": "2026年10月31日(土) ～ 12月14日(月) 休館日 11月無休、12月毎週火曜・水曜休館 開館時間 9：00～16：30(最終入館16：00) ※ナイトミュージアム開…",
-      "place": "本間美術館",
-      "price": "大人1,300円、学生600円、中学生以下無料",
-      "periodStart": "2026-10-31",
-      "periodEnd": "2026-12-14"
-    },
-    {
-      "title": "企画展「酒田市大火から50年―1976.10.29 忘れない 猛火の記憶と復興までの歩みー」",
-      "url": "https://sakata.mypl.net/event/00000478119/",
-      "category": "展覧会",
-      "shop": "",
-      "start": "2026-11-28",
-      "end": "2026-12-27",
-      "dateText": "2026年10月3日(土) ～ 2027年2月14日(日) 月曜休館（祝日の場合は翌日） 9：00～16：30（最終入館16：00）",
-      "place": "酒田市文化資料館光丘文庫",
-      "price": "無料",
-      "periodStart": "2026-10-03",
-      "periodEnd": "2027-02-14"
-    },
-    {
       "title": "外村理紗＆小林愛実 デュオ・リサイタル",
       "url": "https://sakata.mypl.net/event/00000475460/",
       "category": "音楽イベント、コンサート、ライブ",
@@ -457,6 +363,19 @@
       "price": "一般4,800円、学生（25歳以下）2,500円",
       "periodEnd": "2026-11-29",
       "periodStart": "2026-11-29"
+    },
+    {
+      "title": "まちの「やってみたい」が集まる「酒田みらい見本市」",
+      "url": "https://sakata.mypl.net/event/00000480092/",
+      "category": "スクール、体験",
+      "shop": "",
+      "start": "2026-11-29",
+      "end": "2026-11-29",
+      "dateText": "2026年11月21日(土) ～ 11月29日(日) 10：00～17：00",
+      "place": "旧加藤邸",
+      "price": "入場無料",
+      "periodStart": "2026-11-21",
+      "periodEnd": "2026-11-29"
     },
     {
       "title": "MY English School SHONAI Christmas Village",
@@ -483,6 +402,48 @@
       "price": "無料",
       "periodEnd": "2026-11-29",
       "periodStart": "2026-11-29"
+    },
+    {
+      "title": "フリー撮影会",
+      "url": "https://sakata.mypl.net/shop/00000377584/news?d=3128142",
+      "category": "お店のイベント",
+      "shop": "Lachouette.TAMAHIME",
+      "start": "2026-11-29",
+      "end": "2026-11-29"
+    },
+    {
+      "title": "ポイント10倍デー",
+      "url": "https://sakata.mypl.net/shop/00000356158/news?d=3464641",
+      "category": "お店のイベント",
+      "shop": "和豚もちぶた 直売所",
+      "start": "2026-11-29",
+      "end": "2026-11-29"
+    },
+    {
+      "title": "本間家の浮世絵",
+      "url": "https://sakata.mypl.net/event/00000479154/",
+      "category": "展覧会",
+      "shop": "",
+      "start": "2026-11-29",
+      "end": "2026-12-14",
+      "dateText": "2026年10月31日(土) ～ 12月14日(月) 休館日 11月無休、12月毎週火曜・水曜休館 開館時間 9：00～16：30(最終入館16：00) ※ナイトミュージアム開…",
+      "place": "本間美術館",
+      "price": "大人1,300円、学生600円、中学生以下無料",
+      "periodStart": "2026-10-31",
+      "periodEnd": "2026-12-14"
+    },
+    {
+      "title": "企画展「酒田市大火から50年―1976.10.29 忘れない 猛火の記憶と復興までの歩みー」",
+      "url": "https://sakata.mypl.net/event/00000478119/",
+      "category": "展覧会",
+      "shop": "",
+      "start": "2026-11-29",
+      "end": "2026-12-28",
+      "dateText": "2026年10月3日(土) ～ 2027年2月14日(日) 月曜休館（祝日の場合は翌日） 9：00～16：30（最終入館16：00）",
+      "place": "酒田市文化資料館光丘文庫",
+      "price": "無料",
+      "periodStart": "2026-10-03",
+      "periodEnd": "2027-02-14"
     },
     {
       "title": "玉芳庵イベント",
